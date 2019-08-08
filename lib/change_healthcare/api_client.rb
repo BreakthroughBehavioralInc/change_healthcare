@@ -1,4 +1,5 @@
 class ChangeHealthcare::ApiClient
+  include Singleton
   attr_reader :session_id
 
   def call(object_name, operation, data = {}, session_id = nil)

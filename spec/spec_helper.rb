@@ -1,8 +1,11 @@
+require 'simplecov'
+SimpleCov.start
+
 require "bundler/setup"
 require "change_healthcare"
 require 'pry'
-require 'simplecov'
-SimpleCov.start
+
+SimpleCov.minimum_coverage 100
 
 RSpec.configure do |config|
   config.before(:each) do

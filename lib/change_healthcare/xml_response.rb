@@ -5,6 +5,7 @@ module ChangeHealthcare
       @response = response
       @xml = Nokogiri::XML(response.body)
     end
+
     def method_missing(m, *args, &block)
       response.send(m, *args, &block)
     end

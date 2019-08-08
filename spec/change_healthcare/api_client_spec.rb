@@ -1,9 +1,8 @@
 require 'spec_helper'
 
 RSpec.describe ChangeHealthcare::ApiClient do
-  before do
-    subject { ChangeHealthcare::ApiClient.new }
-  end
+
+  let(:subject) { ChangeHealthcare::ApiClient.instance }
 
   describe "#call" do
     it "calls the endpoint provided" do

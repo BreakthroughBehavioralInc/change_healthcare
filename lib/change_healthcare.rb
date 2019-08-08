@@ -1,8 +1,14 @@
 require "rest_client"
 require "nokogiri"
+
+require "active_support"
+require 'active_support/core_ext'
+
+require "singleton"
 require "change_healthcare/version"
-require "./lib/change_healthcare/xml_response"
-require "./lib/change_healthcare/api_client"
+require "change_healthcare/xml_response"
+require "change_healthcare/api_client"
+require "change_healthcare/provider_caregiver"
 
 module ChangeHealthcare
   class Error < StandardError; end
