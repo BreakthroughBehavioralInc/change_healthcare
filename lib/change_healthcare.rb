@@ -8,7 +8,9 @@ require "singleton"
 require "change_healthcare/version"
 require "change_healthcare/xml_response"
 require "change_healthcare/api_client"
+require "change_healthcare/base_api_object"
 require "change_healthcare/provider_caregiver"
+require "change_healthcare/organization_lab"
 
 module ChangeHealthcare
   class Error < StandardError; end
