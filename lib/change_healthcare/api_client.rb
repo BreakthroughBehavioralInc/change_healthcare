@@ -4,6 +4,7 @@ class ChangeHealthcare::ApiClient
 
   def call(object_name, operation, params = {}, session_id = nil)
     xml = build_xml(object_name, operation, params, session_id)
+    pp xml
     do_request "#{configuration.base_url}?request=#{xml}"
   end
 
@@ -20,11 +21,22 @@ class ChangeHealthcare::ApiClient
 
     builder = Nokogiri::XML::Builder.new do |xml|
       xml.REQUEST(request_params) do
-        xml.OBJECT(name: object_name, op: operation) do
-          params.each_pair do |k,v|
-            xml.send(k, v)
+        if params.is_a? Hash
+          xml.OBJECT(name: object_name, op: operation) do
+            params.each_pair do |k,v|
+              xml.send(k, v)
+            end
+            xml.organization configuration.facility
           end
-          xml.organization configuration.facility
+        elsif params.is_a? Array
+          params.each do |element|
+            xml.OBJECT(name: object_name, op: operation) do
+              element.each_pair do |k,v|
+                xml.send(k, v)
+              end
+            end
+          end
+
         end
       end
     end

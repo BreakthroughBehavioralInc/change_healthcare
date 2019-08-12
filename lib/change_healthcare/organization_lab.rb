@@ -13,7 +13,7 @@ class ChangeHealthcare::OrganizationLab < ChangeHealthcare::BaseApiObject
   attr_accessor(*self.attributes)
 
   def self.chc_object_name
-  "organizationlab"
+    "organizationlab"
   end
 
   #https://cli-cert.emdeon.com/api/cert/organizationlab.html#search_orderable_labs
