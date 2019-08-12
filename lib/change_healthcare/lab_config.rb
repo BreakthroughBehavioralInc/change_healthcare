@@ -1,4 +1,4 @@
-# https://cli-cert.emdeon.com/api/cert/labcfg.htm
+# https://cli-cert.emdeon.com/api/cert/labcfg.html
 class ChangeHealthcare::LabConfig < ChangeHealthcare::BaseApiObject
   def self.attributes
     [
