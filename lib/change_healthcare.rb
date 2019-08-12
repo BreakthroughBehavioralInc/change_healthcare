@@ -13,6 +13,7 @@ require "change_healthcare/provider_caregiver"
 require "change_healthcare/organization_lab"
 require "change_healthcare/lab_config"
 require "change_healthcare/client_id"
+require "change_healthcare/lab_system_code"
 
 module ChangeHealthcare
   class Error < StandardError; end

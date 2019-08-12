@@ -13,8 +13,8 @@ class ChangeHealthcare::BaseApiObject
 
   private
 
-  def self.call_api(name, params={})
-    ChangeHealthcare::ApiClient.instance.call(chc_object_name, name, params)
+  def self.call_api(name, params={}, include_organization = true)
+    ChangeHealthcare::ApiClient.instance.call(chc_object_name, name, params, include_organization)
   end
 
   def self.response_to_list(resp)
