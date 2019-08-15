@@ -26,3 +26,14 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
 end
+
+
+
+def mdl_config
+  ChangeHealthcare.configure do |c|
+    c.base_url = "https://cli-cert.emdeon.com/servlet/XMLServlet"
+    c.user_id = "p_mdlive1"
+    c.password = "practice00"
+    c.facility = "3004115375"
+  end
+end

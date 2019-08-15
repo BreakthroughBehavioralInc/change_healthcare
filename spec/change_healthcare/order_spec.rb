@@ -12,12 +12,7 @@ RSpec.describe ChangeHealthcare::Order do
 
   describe ".search_by_order_info" do
     it "Retrieves the next requisition number for the lab" do
-      ChangeHealthcare.configure do |c|
-        c.base_url = "https://cli-cert.emdeon.com/servlet/XMLServlet"
-        c.user_id = "p_mdlive1"
-        c.password = "practice00"
-        c.facility = "3004115375"
-      end
+      mdl_config
       resp = ChangeHealthcare::Order.search_by_order_info({ placer_order_number: "76047", orderingorganization: "3004115375" })
 
       expect(resp.first).to be_a_kind_of(ChangeHealthcare::Order)

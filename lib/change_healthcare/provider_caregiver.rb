@@ -23,4 +23,12 @@ class ChangeHealthcare::ProviderCaregiver < ChangeHealthcare::BaseApiObject
     resp = call_api(__method__.to_s)
     response_to_list(resp)
   end
+
+  # https://cli-cert.emdeon.com/api/cert/providercaregiver.html#put_no_update
+  # params = {caregiver: "3004219964", provider: "3004115375"}
+  def self.put_no_update(params={})
+    resp = call_api(__method__.to_s, params, false)
+    response_to_list(resp)
+  end
+
 end
