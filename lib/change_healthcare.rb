@@ -15,6 +15,7 @@ require "change_healthcare/lab_config"
 require "change_healthcare/client_id"
 require "change_healthcare/lab_system_code"
 require "change_healthcare/order"
+require "change_healthcare/caregiver"
 
 module ChangeHealthcare
   class Error < StandardError; end

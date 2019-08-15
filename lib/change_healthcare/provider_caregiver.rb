@@ -1,4 +1,4 @@
-# https://cli-cert.emdeon.com/api/cert/providercaregiver.htm
+# https://cli-cert.emdeon.com/api/cert/providercaregiver.html
 class ChangeHealthcare::ProviderCaregiver < ChangeHealthcare::BaseApiObject
   def self.attributes
     [
