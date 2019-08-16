@@ -30,5 +30,4 @@ class ChangeHealthcare::ProviderCaregiver < ChangeHealthcare::BaseApiObject
     resp = call_api(__method__.to_s, params, false)
     response_to_list(resp)
   end
-
 end

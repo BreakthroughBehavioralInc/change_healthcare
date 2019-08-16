@@ -25,6 +25,9 @@ class ChangeHealthcare::Caregiver < ChangeHealthcare::BaseApiObject
 
   # https://cli-cert.emdeon.com/api/cert/caregiver.html#put_no_update
   # params = {npi: "1684638855", last_name: "TestMDL", first_name: "TestMDL", birth_date: "1/1/1959", caregiver_type: "P"}
+  # Available Types:
+  #      N: Nurse, NP: Nurse Practitioner, OSTEOPA: Osteopathic Physician Assistant
+  #      PA: PA , P: Physician, DC: Doctor of Chiropractic
   def self.put_no_update(params={})
     resp = call_api(__method__.to_s, params, false)
     response_to_list(resp)
