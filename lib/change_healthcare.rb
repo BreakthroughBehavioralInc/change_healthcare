@@ -3,10 +3,21 @@ require "nokogiri"
 
 require "active_support"
 require 'active_support/core_ext'
-require 'require_all'
 require "singleton"
 
-require_all 'lib/**/*.rb'
+require "change_healthcare/version"
+require "change_healthcare/api_client"
+require "change_healthcare/base_api_object"
+require "change_healthcare/xml_response"
+require "change_healthcare/caregiver"
+require "change_healthcare/hsi_label"
+require "change_healthcare/lab_system_code"
+require "change_healthcare/organization_lab"
+require "change_healthcare/provider_caregiver"
+require "change_healthcare/client_id"
+require "change_healthcare/lab_config"
+require "change_healthcare/order"
+require "change_healthcare/person"
 
 module ChangeHealthcare
   class Error < StandardError; end
