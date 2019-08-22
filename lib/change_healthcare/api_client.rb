@@ -3,7 +3,6 @@ class ChangeHealthcare::ApiClient
   attr_reader :session_id
 
   def call(object_name, operation, params = {}, include_organization = true, session_id = nil)
-    pp include_organization
     xml = build_xml(object_name, operation, params, include_organization, session_id)
     pp xml
     do_request "#{configuration.base_url}?request=#{xml}"
@@ -55,6 +54,7 @@ class ChangeHealthcare::ApiClient
   def do_request(url)
     response = ChangeHealthcare::XmlResponse.new(RestClient.get(url))
     doc = response.xml
+    raise ChangeHealthcare::Error.new(doc.root) if doc.children[0].name == "ERROR"
     @session_id = doc.root.attributes["sessionid"].value if doc.root.attributes.keys.include?("sessionid")
     response
   end

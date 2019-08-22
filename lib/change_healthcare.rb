@@ -6,6 +6,7 @@ require 'active_support/core_ext'
 require "singleton"
 
 require "change_healthcare/version"
+require "change_healthcare/error"
 require "change_healthcare/api_client"
 require "change_healthcare/base_api_object"
 require "change_healthcare/xml_response"

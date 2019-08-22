@@ -16,5 +16,10 @@ RSpec.describe ChangeHealthcare::ApiClient do
       expect(resp.body).to be_kind_of(String)
       expect(resp.body).not_to be_empty
     end
+
+    it "raises an Error if the call fails" do
+      expect{subject.call('providercaregiver', 'search_provcg_and_cgpref', {}, false )}.to raise_error(ChangeHealthcare::Error)
+
+    end
   end
 end
