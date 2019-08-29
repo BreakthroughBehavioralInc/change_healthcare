@@ -11,6 +11,10 @@ class ChangeHealthcare::BaseApiObject
     hash.extract!(*self.class.attributes.map{|a|a.to_s}).each_pair {|k,v| public_send("#{k}=",v)}
   end
 
+  def self.configuration
+    ChangeHealthcare.configuration
+  end
+
   private
 
   def self.call_api(name, params={}, include_organization = true)

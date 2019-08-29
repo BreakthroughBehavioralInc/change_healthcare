@@ -34,6 +34,6 @@ module ChangeHealthcare
   end
 
   class Configuration
-    attr_accessor :base_url, :user_id, :password, :facility
+    attr_accessor :base_url, :portal_url, :user_id, :password, :facility
   end
 end
