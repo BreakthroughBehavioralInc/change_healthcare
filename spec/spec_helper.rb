@@ -10,7 +10,7 @@ SimpleCov.minimum_coverage 100
 RSpec.configure do |config|
   config.before(:each) do
     ChangeHealthcare.configure do |c|
-      c.base_url = "https://cli-cert.emdeon.com/servlet/XMLServlet",
+      c.base_url = "https://cli-cert.emdeon.com/servlet/XMLServlet"
       c.portal_url = "https://cli-cert.changehealthcare.com/servlet/DxLogin"
       c.user_id = "api_user"
       c.password = "Welcome123"
