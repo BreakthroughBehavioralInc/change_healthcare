@@ -62,4 +62,20 @@ class ChangeHealthcare::Order < ChangeHealthcare::BaseApiObject
 
     return "#{configuration.portal_url}?#{params.to_query}"
   end
+
+
+  #{order_id: XXXXXXXXXXX}
+  def self.e_order_html_link(params)
+    base = {
+      "userid" => configuration.user_id,
+      "PW" => configuration.password,
+      "hdnBusiness" => configuration.facility,
+      "apiLogin" => "true",
+      "target" => "servlet/servlets.apiOrderServlet?",
+      "actionCommand" => "print",
+      "apiuserid" => configuration.user_id
+    }
+    params.merge!(base)
+    return "#{configuration.portal_url}?#{params.to_query}"
+  end
 end

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    change_healthcare (0.1.4)
+    change_healthcare (0.1.5)
       activesupport (~> 5)
       nokogiri (~> 1)
       rest-client (~> 2)
@@ -27,9 +27,9 @@ GEM
       concurrent-ruby (~> 1.0)
     json (2.2.0)
     method_source (0.9.2)
-    mime-types (3.2.2)
+    mime-types (3.3)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2019.0331)
+    mime-types-data (3.2019.0904)
     mini_portile2 (2.4.0)
     minitest (5.11.3)
     netrc (0.11.0)

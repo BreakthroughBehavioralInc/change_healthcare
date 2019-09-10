@@ -90,4 +90,20 @@ RSpec.describe ChangeHealthcare::Order do
       expect(resp).to eq(expected_response)
     end
   end
+
+
+  describe ".e_order_html_link" do
+    let(:expected_response) do
+      "https://cli-cert.changehealthcare.com/servlet/DxLogin?PW=practice00&actionCommand=print&apiLogin=true&apiuserid=p_mdlive1&hdnBusiness=3004115375&orderid=3004834601&target=servlet%2Fservlets.apiOrderServlet%3F&userid=p_mdlive1"
+    end
+
+    let(:params) { {orderid: "3004834601"} }
+
+    it "Returns the order_summary_screen" do
+      mdl_config
+      resp = ChangeHealthcare::Order.e_order_html_link(params)
+
+      expect(resp).to eq(expected_response)
+    end
+  end
 end
