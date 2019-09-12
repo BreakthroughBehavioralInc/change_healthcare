@@ -24,7 +24,7 @@ class ChangeHealthcare::ApiClient
         if params.is_a? Hash
           xml.OBJECT(name: object_name, op: operation) do
             params.each_pair do |k,v|
-              xml.send(k, v)
+              save_element(xml, k, v)
             end
             xml.organization configuration.facility if include_organization
           end
@@ -32,7 +32,7 @@ class ChangeHealthcare::ApiClient
           params.each do |element|
             xml.OBJECT(name: object_name, op: operation) do
               element.each_pair do |k,v|
-                xml.send(k, v)
+                save_element(xml, k, v)
               end
             end
           end
@@ -41,6 +41,14 @@ class ChangeHealthcare::ApiClient
       end
     end
     builder.to_xml
+  end
+
+  def save_element(xml, k,v)
+    if ["object_id"].include?(k.to_s)
+      xml.send(k.to_s+"_", v)
+    else
+      xml.send(k, v)
+    end
   end
 
   def base_request_params
