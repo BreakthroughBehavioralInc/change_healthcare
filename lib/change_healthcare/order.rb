@@ -48,6 +48,13 @@ class ChangeHealthcare::Order < ChangeHealthcare::BaseApiObject
     response_to_list(resp)
   end
 
+  # https://cli-cert.emdeon.com/api/cert/order.html#get
+  # params = { order: "3004834610" }
+  def self.get(params={})
+    resp = call_api(__method__.to_s, params, false)
+    response_to_list(resp)
+  end
+
   def self.e_order_summary_link(params)
     base = {
       "userid" => configuration.user_id,

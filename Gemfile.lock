@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    change_healthcare (0.1.6)
+    change_healthcare (0.1.7)
       activesupport (~> 5)
       nokogiri (~> 1)
       rest-client (~> 2)
