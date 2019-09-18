@@ -17,7 +17,7 @@ RSpec.describe ChangeHealthcare::Report do
     it "Downloads the results" do
       ChangeHealthcare::Report.download_reports(params) do | data |
         expect(data[:report_unique_id]).not_to be_empty
-        binding.pry
+
         break #just checking one result
       end
     end
