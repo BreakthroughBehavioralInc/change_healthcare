@@ -15,10 +15,12 @@ RSpec.describe ChangeHealthcare::Report do
 
   describe ".download_reports" do
     it "Downloads the results" do
+      counter = 0
       ChangeHealthcare::Report.download_reports(params) do | data |
         expect(data[:report_unique_id]).not_to be_empty
 
-        break #just checking one result
+        break if counter == 2 #just checking one result
+        counter +=1
       end
     end
   end
