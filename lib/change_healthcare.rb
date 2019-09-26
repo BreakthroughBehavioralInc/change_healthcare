@@ -21,6 +21,7 @@ require "change_healthcare/order"
 require "change_healthcare/person"
 require "change_healthcare/object_doc"
 require "change_healthcare/report"
+require "change_healthcare/clinical_report"
 
 
 module ChangeHealthcare
