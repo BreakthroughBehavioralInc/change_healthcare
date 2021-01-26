@@ -43,7 +43,6 @@ class ChangeHealthcare::Person < ChangeHealthcare::BaseApiObject
   #           hsilabel: "7930723", home_phone_area_code: "956", home_phone_number: "5856449"}
   def self.put_partial(params={})
     resp = call_api(__method__.to_s, params, false)
-    pp resp
     response_to_list(resp)
   end
 end

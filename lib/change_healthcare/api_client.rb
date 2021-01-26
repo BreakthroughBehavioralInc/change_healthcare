@@ -4,7 +4,6 @@ class ChangeHealthcare::ApiClient
 
   def call(object_name, operation, params = {}, include_organization = true, session_id = nil)
     xml = build_xml(object_name, operation, params, include_organization, session_id)
-    pp xml
     do_request "#{configuration.base_url}?request=#{xml}"
   end
 

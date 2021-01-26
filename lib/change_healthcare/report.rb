@@ -21,8 +21,6 @@ class ChangeHealthcare::Report < ChangeHealthcare::BaseApiObject
       #cookies = r2.cookies
 
       files_to_dowload_data = r2.body.match("<--BEGIN NUMBER OF DOCS>(?<data>.*)<--END NUMBER OF DOCS>")[:data]
-      pp files_to_dowload_data
-      pp files_to_dowload_data.split(";")
       number, error_code, report_unique_id, _ = files_to_dowload_data.split(";")
       number = number.to_i
 
