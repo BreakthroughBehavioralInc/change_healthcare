@@ -1,6 +1,6 @@
 module ChangeHealthcare
   class XmlResponse
-    attr_reader:xml, :response
+    attr_reader :xml, :response
     def initialize(response)
       @response = response
       @xml = Nokogiri::XML(response.body)

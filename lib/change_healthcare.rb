@@ -22,6 +22,8 @@ require "change_healthcare/person"
 require "change_healthcare/object_doc"
 require "change_healthcare/report"
 require "change_healthcare/clinical_report"
+require "change_healthcare/servlet"
+require "change_healthcare/order_diagnosis"
 
 
 module ChangeHealthcare
@@ -38,6 +40,6 @@ module ChangeHealthcare
   end
 
   class Configuration
-    attr_accessor :base_url, :portal_url, :user_id, :password, :facility
+    attr_accessor :base_url, :base_api_url, :portal_url, :user_id, :password, :facility
   end
 end
