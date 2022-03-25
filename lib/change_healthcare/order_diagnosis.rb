@@ -52,7 +52,7 @@ module ChangeHealthcare
         response_to_list(resp)
       # if order reference is passed in use servlet.apiOrderServlet to grab all order details and fetch orderdiagnosis info
       elsif params[:order].present?
-        new(Servlet.api_order_servlet(params)['orderdiagnosis'])
+        Servlet.api_order_servlet(params)['orderdiagnosis'].map { |diagnosis| new(diagnosis) }
       end
     end
   end
