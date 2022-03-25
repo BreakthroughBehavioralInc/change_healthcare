@@ -12,7 +12,6 @@ RSpec.describe ChangeHealthcare::ProviderCaregiver do
 
   describe ".put_no_update" do
     it "Creates a  caregiver" do
-      mdl_config
       params =  {caregiver: "3004219964", provider: "3004115375"}
       resp = ChangeHealthcare::ProviderCaregiver.put_no_update(params)
       expect(resp.first).to be_a_kind_of(ChangeHealthcare::ProviderCaregiver)
