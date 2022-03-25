@@ -11,7 +11,6 @@ RSpec.describe ChangeHealthcare::Person do
 
   describe ".put_partial" do
     it "Creates a  patient" do
-      mdl_config
       params = {birth_date: "10/27/1923", first_name: "Florenc",
                 last_name: "Edward", middle_name: "E", address_1: "2401 N Abram Rd 86",
                 city: "Mission", state: "TX", sex: "F", zip: "78572", hsi_value: "test",

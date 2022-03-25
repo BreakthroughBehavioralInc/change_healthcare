@@ -12,7 +12,6 @@ RSpec.describe ChangeHealthcare::Order do
 
   describe ".search_by_order_info" do
     it "Retrieves the next requisition number for the lab" do
-      mdl_config
       resp = ChangeHealthcare::Order.search_by_order_info({orderingorganization: "3004115375" })
 
       expect(resp.first).to be_a_kind_of(ChangeHealthcare::Order)
@@ -23,7 +22,6 @@ RSpec.describe ChangeHealthcare::Order do
 
   describe ".get" do
     it "Retrieves the order based on the search params" do
-      mdl_config
       resp = ChangeHealthcare::Order.get({ order: "3004834610" })
 
       expect(resp.first).to be_a_kind_of(ChangeHealthcare::Order)
@@ -95,7 +93,6 @@ RSpec.describe ChangeHealthcare::Order do
     end
 
     it "Returns the order_summary_screen" do
-      mdl_config
       resp = ChangeHealthcare::Order.e_order_summary_link(params)
 
       expect(resp).to eq(expected_response)
@@ -111,7 +108,6 @@ RSpec.describe ChangeHealthcare::Order do
     let(:params) { {orderid: "3004834601"} }
 
     it "Returns the order_summary_screen" do
-      mdl_config
       resp = ChangeHealthcare::Order.e_order_html_link(params)
 
       expect(resp).to eq(expected_response)
