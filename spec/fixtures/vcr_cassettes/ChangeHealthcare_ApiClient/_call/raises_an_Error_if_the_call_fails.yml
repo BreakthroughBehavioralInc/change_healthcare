@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cli-cert.emdeon.com/servlet/XMLServlet?request=%3C?xml%20version=%221.0%22?%3E%3CREQUEST%20userid=%22USER_ID%22%20password=%22PASSWORD%22%20facility=%22FACILITY%22%3E%20%20%3COBJECT%20name=%22providercaregiver%22%20op=%22search_provcg_and_cgpref%22/%3E%3C/REQUEST%3E
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.1.0p0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - cli-cert.emdeon.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 May 2022 17:21:33 GMT
+      Server:
+      - Apache
+      Content-Length:
+      - '398'
+      Set-Cookie:
+      - BIGipServerClinician_CERT-8080=3108146186.36895.0000; path=/; Httponly; Secure
+      - ClinicianLogo=clinician_logo.jpg; Expires=Mon, 20-Jun-2022 17:21:33 GMT; Path=/;Secure;SameSite=None
+      - ClinicianLogoURL=www.emdeon.com; Expires=Mon, 20-Jun-2022 17:21:33 GMT; Path=/;Secure;SameSite=None
+      - ClinicianOrg=MDLIVE; Expires=Mon, 20-Jun-2022 17:21:33 GMT; Path=/;Secure;SameSite=None
+      - ClinicianTheme=emdeon; Expires=Mon, 20-Jun-2022 17:21:33 GMT; Path=/;Secure;SameSite=None
+      Content-Type:
+      - text/xml
+    body:
+      encoding: UTF-8
+      string: "<?xml version='1.0'?><ERROR><code>6</code><description>Missing Required
+        Parameter(s)</description><userMessage>Event Time: 5/21/2022 12:21 PM&#10;Transaction
+        ID: U12352.7&#10;Username: USER_ID&#10;Location: cert: MDLIVE&#10;Missing
+        Required Parameter(s). The following required Input Parameters were not supplied
+        for providercaregiver::search_provcg_and_cgpref: organization</userMessage></ERROR>"
+  recorded_at: Sat, 21 May 2022 17:21:06 GMT
+recorded_with: VCR 6.0.0

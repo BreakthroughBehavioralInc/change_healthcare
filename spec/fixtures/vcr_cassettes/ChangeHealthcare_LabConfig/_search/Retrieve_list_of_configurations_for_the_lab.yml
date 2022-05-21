@@ -1,0 +1,73 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cli-cert.emdeon.com/servlet/XMLServlet?request=%3C?xml%20version=%221.0%22?%3E%3CREQUEST%20userid=%22USER_ID%22%20password=%22PASSWORD%22%20facility=%22FACILITY%22%3E%20%20%3COBJECT%20name=%22labcfg%22%20op=%22search%22%3E%20%20%20%20%3Clab%3E23402537%3C/lab%3E%20%20%20%20%3Cconfigurable_item%3EMax%20diagnoses%20per%20test%3C/configurable_item%3E%20%20%3C/OBJECT%3E%20%20%3COBJECT%20name=%22labcfg%22%20op=%22search%22%3E%20%20%20%20%3Clab%3E23402537%3C/lab%3E%20%20%20%20%3Cconfigurable_item%3EMax%20diagnoses%20per%20requisition%3C/configurable_item%3E%20%20%3C/OBJECT%3E%20%20%3COBJECT%20name=%22labcfg%22%20op=%22search%22%3E%20%20%20%20%3Clab%3E23402537%3C/lab%3E%20%20%20%20%3Cconfigurable_item%3EShow%20Report%20Comments%3C/configurable_item%3E%20%20%3C/OBJECT%3E%20%20%3COBJECT%20name=%22labcfg%22%20op=%22search%22%3E%20%20%20%20%3Clab%3E23402537%3C/lab%3E%20%20%20%20%3Cconfigurable_item%3EMax%20tests%20per%20requisition%3C/configurable_item%3E%20%20%3C/OBJECT%3E%20%20%3COBJECT%20name=%22labcfg%22%20op=%22search%22%3E%20%20%20%20%3Clab%3E23402537%3C/lab%3E%20%20%20%20%3Cconfigurable_item%3EShow%20Fasting%20Hours%3C/configurable_item%3E%20%20%3C/OBJECT%3E%20%20%3COBJECT%20name=%22labcfg%22%20op=%22search%22%3E%20%20%20%20%3Clab%3E23402537%3C/lab%3E%20%20%20%20%3Cconfigurable_item%3ESTAT%20Indicator%3C/configurable_item%3E%20%20%3C/OBJECT%3E%20%20%3COBJECT%20name=%22labcfg%22%20op=%22search%22%3E%20%20%20%20%3Clab%3E23402537%3C/lab%3E%20%20%20%20%3Cconfigurable_item%3EPhone%20Results%3C/configurable_item%3E%20%20%3C/OBJECT%3E%20%20%3COBJECT%20name=%22labcfg%22%20op=%22search%22%3E%20%20%20%20%3Clab%3E23402537%3C/lab%3E%20%20%20%20%3Cconfigurable_item%3ECopy%20To%20Functionality%3C/configurable_item%3E%20%20%3C/OBJECT%3E%20%20%3COBJECT%20name=%22labcfg%22%20op=%22search%22%3E%20%20%20%20%3Clab%3E23402537%3C/lab%3E%20%20%20%20%3Cconfigurable_item%3EMax%20copy%20to%20per%20requisition%3C/configurable_item%3E%20%20%3C/OBJECT%3E%20%20%3COBJECT%20name=%22labcfg%22%20op=%22search%22%3E%20%20%20%20%3Clab%3E23402537%3C/lab%3E%20%20%20%20%3Cconfigurable_item%3ECustom%20ABN%20Format%3C/configurable_item%3E%20%20%3C/OBJECT%3E%20%20%3COBJECT%20name=%22labcfg%22%20op=%22search%22%3E%20%20%20%20%3Clab%3E23402537%3C/lab%3E%20%20%20%20%3Cconfigurable_item%3ESupport%20Standard%20Requisitions%3C/configurable_item%3E%20%20%3C/OBJECT%3E%20%20%3COBJECT%20name=%22labcfg%22%20op=%22search%22%3E%20%20%20%20%3Clab%3E23402537%3C/lab%3E%20%20%20%20%3Cconfigurable_item%3ESupport%20PSC%20Requisitions%3C/configurable_item%3E%20%20%3C/OBJECT%3E%20%20%3COBJECT%20name=%22labcfg%22%20op=%22search%22%3E%20%20%20%20%3Clab%3E23402537%3C/lab%3E%20%20%20%20%3Cconfigurable_item%3ESupport%20Third%20Party%20Billing%3C/configurable_item%3E%20%20%3C/OBJECT%3E%20%20%3COBJECT%20name=%22labcfg%22%20op=%22search%22%3E%20%20%20%20%3Clab%3E23402537%3C/lab%3E%20%20%20%20%3Cconfigurable_item%3ESupport%20Client%20Billing%3C/configurable_item%3E%20%20%3C/OBJECT%3E%20%20%3COBJECT%20name=%22labcfg%22%20op=%22search%22%3E%20%20%20%20%3Clab%3E23402537%3C/lab%3E%20%20%20%20%3Cconfigurable_item%3ESupport%20Patient%20Billing%3C/configurable_item%3E%20%20%3C/OBJECT%3E%3C/REQUEST%3E
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.1.0p0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - cli-cert.emdeon.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 May 2022 17:21:35 GMT
+      Server:
+      - Apache
+      Content-Length:
+      - '5882'
+      Set-Cookie:
+      - BIGipServerClinician_CERT-8080=3108146186.36895.0000; path=/; Httponly; Secure
+      - ClinicianLogo=clinician_logo.jpg; Expires=Mon, 20-Jun-2022 17:21:35 GMT; Path=/;Secure;SameSite=None
+      - ClinicianLogoURL=www.emdeon.com; Expires=Mon, 20-Jun-2022 17:21:35 GMT; Path=/;Secure;SameSite=None
+      - ClinicianOrg=MDLIVE; Expires=Mon, 20-Jun-2022 17:21:35 GMT; Path=/;Secure;SameSite=None
+      - ClinicianTheme=emdeon; Expires=Mon, 20-Jun-2022 17:21:35 GMT; Path=/;Secure;SameSite=None
+      Content-Type:
+      - text/xml
+    body:
+      encoding: UTF-8
+      string: <?xml version='1.0'?><RESULT sessionid="USER_ID45a134c70aa8faff|45c2d87e28d2a21d|435fd71de1873440|42dfd71de1873440|"><OBJECT
+        name="labcfg" op="search"><lab_code></lab_code><zip></zip><city></city><parentlab></parentlab><address_1></address_1><address_2></address_2><description>Maximum
+        number of diagnoses permitted per test on a requisition</description><parent_level></parent_level><range></range><transmission_mode></transmission_mode><lab>8279336</lab><control_width>3</control_width><sequence>20</sequence><is_required>Y</is_required><configurable_item>MAX
+        DIAGNOSES PER TEST</configurable_item><domain_code_type></domain_code_type><lab_name></lab_name><state></state><value>6</value><validation></validation><control_type>TEXT</control_type><validate>NUMERIC</validate></OBJECT><OBJECT
+        name="labcfg" op="search"><lab_code></lab_code><zip></zip><city></city><parentlab></parentlab><address_1></address_1><address_2></address_2><description>Max
+        diagnoses per requisition</description><parent_level></parent_level><range></range><transmission_mode></transmission_mode><lab>8279336</lab><control_width>3</control_width><sequence>21</sequence><is_required>N</is_required><configurable_item>MAX
+        DIAGNOSES PER REQUISITION</configurable_item><domain_code_type></domain_code_type><lab_name></lab_name><state></state><value>160</value><validation></validation><control_type>TEXT</control_type><validate>NUMERIC</validate></OBJECT><OBJECT
+        name="labcfg" op="search"><lab_code></lab_code><zip></zip><city></city><parentlab></parentlab><address_1></address_1><address_2></address_2><description>Send
+        Report Comments</description><parent_level></parent_level><range></range><transmission_mode></transmission_mode><lab>8279336</lab><control_width></control_width><sequence>163</sequence><is_required>N</is_required><configurable_item>SHOW
+        REPORT COMMENTS</configurable_item><domain_code_type></domain_code_type><lab_name></lab_name><state></state><value>N</value><validation></validation><control_type>CHECK
+        BOX</control_type><validate>Y_OR_N</validate></OBJECT><OBJECT name="labcfg"
+        op="search"><lab_code></lab_code><zip></zip><city></city><parentlab></parentlab><address_1></address_1><address_2></address_2><description>Maximum
+        number of tests permitted per requisition</description><parent_level></parent_level><range></range><transmission_mode></transmission_mode><lab>8279336</lab><control_width>3</control_width><sequence>30</sequence><is_required>Y</is_required><configurable_item>MAX
+        TESTS PER REQUISITION</configurable_item><domain_code_type></domain_code_type><lab_name></lab_name><state></state><value>40</value><validation></validation><control_type>TEXT</control_type><validate>NUMERIC</validate></OBJECT><OBJECT
+        name="labcfg" op="search"><lab_code></lab_code><zip></zip><city></city><parentlab></parentlab><address_1></address_1><address_2></address_2><description>Show
+        Fasting Hours</description><parent_level></parent_level><range></range><transmission_mode></transmission_mode><lab>8279336</lab><control_width></control_width><sequence>164</sequence><is_required>Y</is_required><configurable_item>SHOW
+        FASTING HOURS</configurable_item><domain_code_type></domain_code_type><lab_name></lab_name><state></state><value>Y</value><validation></validation><control_type>CHECK
+        BOX</control_type><validate>Y_OR_N</validate></OBJECT><OBJECT name="labcfg"
+        op="search"><lab_code></lab_code><zip></zip><city></city><parentlab></parentlab><address_1></address_1><address_2></address_2><description>STAT
+        Indicator</description><parent_level></parent_level><range></range><transmission_mode></transmission_mode><lab>8279336</lab><control_width></control_width><sequence>190</sequence><is_required>Y</is_required><configurable_item>STAT
+        INDICATOR</configurable_item><domain_code_type></domain_code_type><lab_name></lab_name><state></state><value>Y</value><validation></validation><control_type>CHECK
+        BOX</control_type><validate>Y_OR_N</validate></OBJECT><OBJECT name="labcfg"
+        op="search"><lab_code></lab_code><zip></zip><city></city><parentlab></parentlab><address_1></address_1><address_2></address_2><description>Phone
+        Results</description><parent_level></parent_level><range></range><transmission_mode></transmission_mode><lab>8279336</lab><control_width></control_width><sequence>180</sequence><is_required>N</is_required><configurable_item>PHONE
+        RESULTS</configurable_item><domain_code_type></domain_code_type><lab_name></lab_name><state></state><value>Y</value><validation></validation><control_type>CHECK
+        BOX</control_type><validate>Y_OR_N</validate></OBJECT><OBJECT name="labcfg"
+        op="search"><lab_code></lab_code><zip></zip><city></city><parentlab></parentlab><address_1></address_1><address_2></address_2><description>Copy
+        To Functionality</description><parent_level></parent_level><range></range><transmission_mode></transmission_mode><lab>8279336</lab><control_width></control_width><sequence>170</sequence><is_required>N</is_required><configurable_item>COPY
+        TO FUNCTIONALITY</configurable_item><domain_code_type>COPYTO</domain_code_type><lab_name></lab_name><state></state><value>Y</value><validation></validation><control_type>SYSTEM
+        CODE INSTANCE</control_type><validate>CHAR</validate></OBJECT><OBJECT name="labcfg"
+        op="search"><lab_code></lab_code><zip></zip><city></city><parentlab></parentlab><address_1></address_1><address_2></address_2><description>Maximum
+        number of physician copy-tos permitted per requisition</description><parent_level></parent_level><range></range><transmission_mode></transmission_mode><lab>8279336</lab><control_width>2</control_width><sequence>40</sequence><is_required>Y</is_required><configurable_item>MAX
+        COPY TO PER REQUISITION</configurable_item><domain_code_type></domain_code_type><lab_name></lab_name><state></state><value>4</value><validation></validation><control_type>TEXT</control_type><validate>NUMERIC</validate></OBJECT></RESULT>
+  recorded_at: Sat, 21 May 2022 17:21:09 GMT
+recorded_with: VCR 6.0.0

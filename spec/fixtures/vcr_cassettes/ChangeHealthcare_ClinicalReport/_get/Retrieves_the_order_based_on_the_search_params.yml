@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cli-cert.emdeon.com/servlet/XMLServlet?request=%3C?xml%20version=%221.0%22?%3E%3CREQUEST%20userid=%22USER_ID%22%20password=%22PASSWORD%22%20facility=%22FACILITY%22%3E%20%20%3COBJECT%20name=%22clinicalreport%22%20op=%22get%22%3E%20%20%20%20%3Cclinicalreport%3E3007035774%3C/clinicalreport%3E%20%20%3C/OBJECT%3E%3C/REQUEST%3E
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.1.0p0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - cli-cert.emdeon.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 May 2022 17:21:34 GMT
+      Server:
+      - Apache
+      Content-Length:
+      - '2539'
+      Set-Cookie:
+      - BIGipServerClinician_CERT-8080=3108146186.36895.0000; path=/; Httponly; Secure
+      - ClinicianLogo=clinician_logo.jpg; Expires=Mon, 20-Jun-2022 17:21:34 GMT; Path=/;Secure;SameSite=None
+      - ClinicianLogoURL=www.emdeon.com; Expires=Mon, 20-Jun-2022 17:21:34 GMT; Path=/;Secure;SameSite=None
+      - ClinicianOrg=MDLIVE; Expires=Mon, 20-Jun-2022 17:21:34 GMT; Path=/;Secure;SameSite=None
+      - ClinicianTheme=emdeon; Expires=Mon, 20-Jun-2022 17:21:34 GMT; Path=/;Secure;SameSite=None
+      Content-Type:
+      - text/xml
+    body:
+      encoding: UTF-8
+      string: <?xml version='1.0'?><RESULT sessionid="USER_ID45a7550c2e4d2613|45c04dae93194b79|435fd722db323800|42dfd722db323800|"><OBJECT
+        name="clinicalreport" op="get"><lab_code></lab_code><ordering_cg_fname>Percival</ordering_cg_fname><person_suffix></person_suffix><clinicalreport>3007035774</clinicalreport><psc_orders_created></psc_orders_created><receiving_cg_lname></receiving_cg_lname><reports_count></reports_count><receivingorganization>FACILITY</receivingorganization><ordering_cg_suffix></ordering_cg_suffix><expiration_date>3/21/2020  5:51
+        PM</expiration_date><person_account_number>642142416</person_account_number><content_expiration_date>1/21/2020  5:51
+        PM</content_expiration_date><is_abnormal>Y</is_abnormal><reports_undelivered></reports_undelivered><sponsor_name></sponsor_name><reports_forwarded></reports_forwarded><person_last_name>STOUT</person_last_name><placer_order_number>54306</placer_order_number><previousreport>3007035773</previousreport><is_downloaded>Y</is_downloaded><creation_date>9/23/2019  1:00
+        AM</creation_date><is_forwarded>N</is_forwarded><organization_name></organization_name><report_type>LABRES</report_type><ordering_cg_mname></ordering_cg_mname><ownerid>FACILITY</ownerid><forwarded>N</forwarded><orderresult>622677071907622</orderresult><sequence></sequence><is_annotated>N</is_annotated><filler_order_number>SL54306</filler_order_number><reports_printed></reports_printed><person>3006474952</person><receiving_cg_mname></receiving_cg_mname><reports_delivered></reports_delivered><is_latest>Y</is_latest><sponsor>4671781</sponsor><is_viewed>Y</is_viewed><document></document><report_status>F</report_status><receiving_client_id>71935621</receiving_client_id><ordering_cg_lname>Winthrope</ordering_cg_lname><person_middle_name></person_middle_name><report_priority>R</report_priority><clearance>10</clearance><creation_datetime>9/23/2019  5:51
+        PM</creation_datetime><has_external_content>N</has_external_content><is_printed>N</is_printed><receiving_cg_fname></receiving_cg_fname><abnormals_count></abnormals_count><report_service_date>9/23/2019  4:23
+        PM</report_service_date><orders_transmitted></orders_transmitted><report_subject>CLINICAL
+        REPORT</report_subject><ordering_client_id>3873606073</ordering_client_id><originalreport>3007035773</originalreport><report_request_date>9/23/2019  2:58
+        PM</report_request_date><std_orders_created></std_orders_created><receiving_cg_suffix></receiving_cg_suffix><person_first_name>DANIEL</person_first_name><reports_viewed></reports_viewed></OBJECT></RESULT>
+  recorded_at: Sat, 21 May 2022 17:21:08 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cli-cert.emdeon.com/servlet/XMLServlet?request=%3C?xml%20version=%221.0%22?%3E%3CREQUEST%20userid=%22USER_ID%22%20password=%22PASSWORD%22%20facility=%22FACILITY%22%3E%20%20%3COBJECT%20name=%22caregiver%22%20op=%22search%22%3E%20%20%20%20%3Cnpi%3E1877324149%3C/npi%3E%20%20%3C/OBJECT%3E%3C/REQUEST%3E
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.1.0p0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - cli-cert.emdeon.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 May 2022 17:21:33 GMT
+      Server:
+      - Apache
+      Content-Length:
+      - '1007'
+      Set-Cookie:
+      - BIGipServerClinician_CERT-8080=3108146186.36895.0000; path=/; Httponly; Secure
+      - ClinicianLogo=clinician_logo.jpg; Expires=Mon, 20-Jun-2022 17:21:33 GMT; Path=/;Secure;SameSite=None
+      - ClinicianLogoURL=www.emdeon.com; Expires=Mon, 20-Jun-2022 17:21:33 GMT; Path=/;Secure;SameSite=None
+      - ClinicianOrg=MDLIVE; Expires=Mon, 20-Jun-2022 17:21:33 GMT; Path=/;Secure;SameSite=None
+      - ClinicianTheme=emdeon; Expires=Mon, 20-Jun-2022 17:21:33 GMT; Path=/;Secure;SameSite=None
+      Content-Type:
+      - text/xml
+    body:
+      encoding: UTF-8
+      string: <?xml version='1.0'?><RESULT sessionid="USER_ID45c86b94585c5e2c|45c6ec582124adfd|435fd72de7c99880|42dfd72de7c99880|"><OBJECT
+        name="caregiver" op="search"><hsilabel></hsilabel><prefix></prefix><birth_date>1/1/1959</birth_date><last_modified_date>3/25/2021  5:12
+        PM</last_modified_date><license_state></license_state><suffix></suffix><title></title><pdmp_prescriber_role></pdmp_prescriber_role><uuid></uuid><ssn></ssn><caregiver>3004219518</caregiver><caregiverhsi></caregiverhsi><hsi_value></hsi_value><first_name>Timothy</first_name><label_name></label_name><dea_number></dea_number><license_type></license_type><npi>1877324149</npi><sex></sex><last_name>Applegate</last_name><creation_date></creation_date><organization_name></organization_name><middle_name></middle_name><license_status></license_status><license_number></license_number><caregiver_type>P</caregiver_type><is_epcs_enabled></is_epcs_enabled><upin></upin><license_exp_date></license_exp_date><organization></organization></OBJECT></RESULT>
+  recorded_at: Sat, 21 May 2022 17:21:07 GMT
+recorded_with: VCR 6.0.0

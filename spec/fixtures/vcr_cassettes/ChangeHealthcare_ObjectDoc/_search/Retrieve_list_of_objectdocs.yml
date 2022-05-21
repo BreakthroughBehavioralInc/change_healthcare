@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cli-cert.emdeon.com/servlet/XMLServlet?request=%3C?xml%20version=%221.0%22?%3E%3CREQUEST%20userid=%22USER_ID%22%20password=%22PASSWORD%22%20facility=%22FACILITY%22%3E%20%20%3COBJECT%20name=%22objectdoc%22%20op=%22search%22%3E%20%20%20%20%3Cobject_id%3E3004834601%3C/object_id%3E%20%20%3C/OBJECT%3E%3C/REQUEST%3E
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.1.0p0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - cli-cert.emdeon.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 May 2022 17:21:36 GMT
+      Server:
+      - Apache
+      Content-Length:
+      - '490'
+      Set-Cookie:
+      - BIGipServerClinician_CERT-8080=3108146186.36895.0000; path=/; Httponly; Secure
+      - ClinicianLogo=clinician_logo.jpg; Expires=Mon, 20-Jun-2022 17:21:36 GMT; Path=/;Secure;SameSite=None
+      - ClinicianLogoURL=www.emdeon.com; Expires=Mon, 20-Jun-2022 17:21:36 GMT; Path=/;Secure;SameSite=None
+      - ClinicianOrg=MDLIVE; Expires=Mon, 20-Jun-2022 17:21:36 GMT; Path=/;Secure;SameSite=None
+      - ClinicianTheme=emdeon; Expires=Mon, 20-Jun-2022 17:21:36 GMT; Path=/;Secure;SameSite=None
+      Content-Type:
+      - text/xml
+    body:
+      encoding: UTF-8
+      string: <?xml version='1.0'?><RESULT sessionid="USER_ID4586faf0fb8252d1|45b1979f47b8236e|435fd71313462a40|42dfd71313462a40|"><OBJECT
+        name="objectdoc" op="search"><storage_date>9/11/2019 10:45 AM</storage_date><body_text></body_text><mime_type>HTML</mime_type><object_type>order</object_type><clearance>10</clearance><expiration_date></expiration_date><ownerid>FACILITY</ownerid><object_id>3004834601</object_id><objectdoc>621448196359963</objectdoc><report_date></report_date></OBJECT></RESULT>
+  recorded_at: Sat, 21 May 2022 17:21:09 GMT
+recorded_with: VCR 6.0.0

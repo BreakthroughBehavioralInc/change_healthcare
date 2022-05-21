@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cli-cert.emdeon.com/servlet/XMLServlet?request=%3C?xml%20version=%221.0%22?%3E%3CREQUEST%20userid=%22USER_ID%22%20password=%22PASSWORD%22%20facility=%22FACILITY%22%3E%20%20%3COBJECT%20name=%22caregiver%22%20op=%22put_no_update%22%3E%20%20%20%20%3Cnpi%3E1684638855%3C/npi%3E%20%20%20%20%3Clast_name%3ETestMDL%3C/last_name%3E%20%20%20%20%3Cfirst_name%3ETestMDL%3C/first_name%3E%20%20%20%20%3Cbirth_date%3E1/1/1959%3C/birth_date%3E%20%20%20%20%3Ccaregiver_type%3EP%3C/caregiver_type%3E%20%20%3C/OBJECT%3E%3C/REQUEST%3E
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.1.0p0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - cli-cert.emdeon.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 May 2022 17:21:34 GMT
+      Server:
+      - Apache
+      Content-Length:
+      - '961'
+      Set-Cookie:
+      - BIGipServerClinician_CERT-8080=3108146186.36895.0000; path=/; Httponly; Secure
+      - ClinicianLogo=clinician_logo.jpg; Expires=Mon, 20-Jun-2022 17:21:34 GMT; Path=/;Secure;SameSite=None
+      - ClinicianLogoURL=www.emdeon.com; Expires=Mon, 20-Jun-2022 17:21:34 GMT; Path=/;Secure;SameSite=None
+      - ClinicianOrg=MDLIVE; Expires=Mon, 20-Jun-2022 17:21:34 GMT; Path=/;Secure;SameSite=None
+      - ClinicianTheme=emdeon; Expires=Mon, 20-Jun-2022 17:21:34 GMT; Path=/;Secure;SameSite=None
+      Content-Type:
+      - text/xml
+    body:
+      encoding: UTF-8
+      string: <?xml version='1.0'?><RESULT sessionid="USER_ID45c593a15588027d|45bf005b5d44be56|435fd7147e1f4080|42dfd7147e1f4080|"><OBJECT
+        name="caregiver" op="put_no_update"><hsilabel></hsilabel><prefix></prefix><birth_date></birth_date><last_modified_date></last_modified_date><license_state></license_state><suffix></suffix><title></title><pdmp_prescriber_role></pdmp_prescriber_role><uuid></uuid><ssn></ssn><caregiver>3004219964</caregiver><caregiverhsi></caregiverhsi><hsi_value></hsi_value><first_name></first_name><label_name></label_name><dea_number></dea_number><license_type></license_type><npi></npi><sex></sex><last_name></last_name><creation_date></creation_date><organization_name></organization_name><middle_name></middle_name><license_status></license_status><license_number></license_number><caregiver_type></caregiver_type><is_epcs_enabled></is_epcs_enabled><upin></upin><license_exp_date></license_exp_date><organization></organization></OBJECT></RESULT>
+  recorded_at: Sat, 21 May 2022 17:21:07 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,136 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cli-cert.emdeon.com/servlet/XMLServlet?request=%3C?xml%20version=%221.0%22?%3E%3CREQUEST%20userid=%22USER_ID%22%20password=%22PASSWORD%22%20facility=%22FACILITY%22%3E%20%20%3COBJECT%20name=%22objectdoc%22%20op=%22get%22%3E%20%20%20%20%3Cobjectdoc%3E621448196359963%3C/objectdoc%3E%20%20%3C/OBJECT%3E%3C/REQUEST%3E
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.1.0p0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - cli-cert.emdeon.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 May 2022 17:21:36 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - BIGipServerClinician_CERT-8080=3108146186.36895.0000; path=/; Httponly; Secure
+      - ClinicianLogo=clinician_logo.jpg; Expires=Mon, 20-Jun-2022 17:21:36 GMT; Path=/;Secure;SameSite=None
+      - ClinicianLogoURL=www.emdeon.com; Expires=Mon, 20-Jun-2022 17:21:36 GMT; Path=/;Secure;SameSite=None
+      - ClinicianOrg=MDLIVE; Expires=Mon, 20-Jun-2022 17:21:36 GMT; Path=/;Secure;SameSite=None
+      - ClinicianTheme=emdeon; Expires=Mon, 20-Jun-2022 17:21:36 GMT; Path=/;Secure;SameSite=None
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - text/xml
+    body:
+      encoding: UTF-8
+      string: '<?xml version=''1.0''?><RESULT sessionid="USER_ID457b1a1ee2d1b0bd|45b69ad9392553f4|435fd713bdb06540|42dfd713bdb06540|"><OBJECT
+        name="objectdoc" op="get"><storage_date>9/11/2019 10:45 AM</storage_date><body_text>&lt;HTML&gt;&lt;HEAD&gt;&#10;&lt;META
+        HTTP-EQUIV=&quot;CACHE-CONTROL&quot; CONTENT=&quot;NO-CACHE&quot;&gt;&#10;&lt;META
+        HTTP-EQUIV=&quot;Pragma&quot; CONTENT=&quot;no-cache&quot;&gt;&#10;&lt;META
+        HTTP-EQUIV=&quot;Expires&quot; CONTENT=&quot;0&quot;&gt;&#10;&lt;LINK REL=&quot;stylesheet&quot;
+        TYPE=&quot;text/css&quot; HREF=&quot;https://cli-cert.changehealthcare.com/html/OrderStyle.css&quot;&gt;&#10;&lt;SCRIPT
+        TYPE=&quot;text/javascript&quot; SRC=&quot;https://cli-cert.changehealthcare.com/javascript/utils/dxUtils.js&quot;&gt;&lt;/SCRIPT&gt;&#10;&lt;SCRIPT
+        TYPE=&quot;text/javascript&quot; SRC=&quot;https://cli-cert.changehealthcare.com/javascript/reqtemplate/Quests.js&quot;&gt;&lt;/SCRIPT&gt;&#10;&lt;/HEAD&gt;&lt;BODY&gt;&lt;SCRIPT
+        TYPE=&quot;text/javascript&quot;&gt;&#10;var _Reqs = new Array();&#10;_Reqs[0]
+        = &apos;54201&apos;;&#10;var _sBarCode = &apos;&apos;;&#10;var sBarCode =
+        &apos;54201&apos;;&#10;var sPrintLabel = &apos;Y&apos;;&#10;var sAlgorithm
+        = &apos;1&apos;;&#10;var sShowBarCode = &apos;Y&apos;;&#10;var sShowLabelBarCode
+        = &apos;N&apos;;&#10;var sShowABNBarCode = &apos;N&apos;;&#10;var _sServerURL
+        = &apos;https://cli-cert.changehealthcare.com&apos;;&#10;var sLine1 = &apos;54201&apos;;&#10;var
+        sLine2 = &apos;71935621&apos;;&#10;var sLine3 = &apos;DEMOPATIENT1, DEMOPATIENT1&apos;;&#10;var
+        sLine4 = &apos;DOB: 7/10/1989&apos;;&#10;var sLine5 = &apos;ID: 3&apos;;&#10;var
+        sLine6 = &apos; &apos;;&#10;var sAbnText = &apos;&apos;;&#10;var iAbnTextIndex
+        = &apos;&apos;;&#10;var isNYPEnabled = &apos;N&apos;;&#10;var _Report = {&#10;lab:
+        {&#10;name: &apos;QUEST DIAGNOSTICS-TAMPA&apos;,&#10;alternate_name: &apos;&apos;,&#10;address_1:
+        &apos;4225 E. Fowler Ave&apos;,&#10;address_2: &apos;&apos;,&#10;state: &apos;FL&apos;,&#10;zip:
+        &apos;33617&apos;,&#10;city: &apos;Tampa&apos;,&#10;labcode: &apos;TMP&apos;,&#10;phone:
+        &apos;(602)978-2441&apos;,&#10;docsonreq: &apos;Y&apos;,&#10;logo: &apos;&quot;https://cli-cert.changehealthcare.com/images/lab/Quest.jpg&quot;&apos;&#10;},&#10;order:
+        {&#10;bill_type: &apos;T&apos;,&#10;order_type: &apos;PSC&apos;,&#10;order_status:
+        &apos;I&apos;,&#10;order_number: &apos;54201&apos;,&#10;parent: &apos;&apos;,&#10;expected_date_time:
+        &apos;9/23/2019&apos;,&#10;collection_date_time: &apos;9/9/2019 12:29 PM&apos;,&#10;collection_date:
+        &apos;9/9/2019&apos;,&#10;collection_time: &apos;12:29&apos;,&#10;timezone:
+        &apos;EDT&apos;,&#10;expected_coll_date: &apos;9/23/2019&apos;,&#10;expected_coll_time:
+        &apos;&apos;,&#10;request_date: &apos;9/9/2019 12:29 PM&apos;,&#10;showStat:
+        &apos;Y&apos;,&#10;stat: &apos;&apos;,&#10;priority: &apos;&apos;,&#10;operator:
+        &apos;USER_ID&apos;,&#10;ordering_cg_id: &apos;71935621&apos;,&#10;fasting_hours:
+        &apos;&apos;,&#10;lab_reference: &apos;&apos;,&#10;pan_indicator: &apos;&apos;,&#10;objid:
+        &apos;3004834601&apos;,&#10;prepaid_amount: &apos;&apos;,&#10;signature: &apos;Y&apos;,&#10;esignature:
+        &apos;Y&apos;,&#10;callback: &apos;&apos;,&#10;fax: &apos;&apos;,&#10;hospital_id:
+        &apos;&apos;,&#10;room: &apos;&apos;,&#10;bed: &apos;&apos;,&#10;nurse_unit:
+        &apos;&apos;,&#10;comments: &apos;&apos;,&#10;instructions: &apos;&apos;&#10;},&#10;patient:
+        {&#10;first: &apos;demopatient1&apos;,&#10;middle: &apos;&apos;,&#10;last:
+        &apos;demopatient1&apos;,&#10;suffix: &apos;&apos;,&#10;address1: &apos;1
+        St Nw 1&apos;,&#10;address2: &apos;&apos;,&#10;city: &apos;Sunrise&apos;,&#10;state:
+        &apos;FL&apos;,&#10;zip: &apos;33324&apos;,&#10;phone: &apos;&apos;,&#10;id:
+        &apos;3&apos;,&#10;ssn: &apos;&apos;,&#10;dob: &apos;7/10/1989&apos;,&#10;age:
+        &apos;30&apos;,&#10;sex: &apos;Male&apos;,&#10;patVisits:  &apos;false&apos;},&#10;facility:
+        {&#10;name: &apos;MDLIVE&apos;,&#10;address1: &apos;13630 Nw 8th Street Suite
+        205&apos;,&#10;address2: &apos;&apos;,&#10;city: &apos;Sunrise&apos;,&#10;state:
+        &apos;FL&apos;,&#10;zip: &apos;33325&apos;,&#10;fax: &apos;&apos;,&#10;phone:
+        &apos;(954)446-0439&apos;,&#10;vendor: &apos;&apos;&#10;},&#10;refcaregiver:
+        {&#10;name: &apos;demoprovider1  demoprovider1&apos;,&#10;first: &apos;demoprovider1&apos;,&#10;middle:
+        &apos;&apos;,&#10;last: &apos;demoprovider1&apos;,&#10;id: &apos;&apos;,&#10;hsi:
+        &apos;&apos;,&#10;upin: &apos;&apos;,&#10;npi: &apos;9978010830&apos;&#10;},&#10;duplicateto:
+        {&#10;name1: &apos;&apos;,&#10;address11: &apos;&apos;,&#10;address21: &apos;&apos;,&#10;city1:
+        &apos;&apos;,&#10;state1: &apos;&apos;,&#10;zip1: &apos;&apos;,&#10;phone1:
+        &apos;&apos;,&#10;cgid1: &apos;&apos;,&#10;fax1: &apos;&apos;,&#10;name2:
+        &apos;&apos;,&#10;address12: &apos;&apos;,&#10;address22: &apos;&apos;,&#10;city2:
+        &apos;&apos;,&#10;state2: &apos;&apos;,&#10;zip2: &apos;&apos;,&#10;phone2:
+        &apos;&apos;,&#10;cgid2: &apos;&apos;,&#10;fax2: &apos;&apos;,&#10;name3:
+        &apos;&apos;,&#10;address13: &apos;&apos;,&#10;address23: &apos;&apos;,&#10;city3:
+        &apos;&apos;,&#10;state3: &apos;&apos;,&#10;zip3: &apos;&apos;,&#10;phone3:
+        &apos;&apos;,&#10;cgid3: &apos;&apos;,&#10;fax3: &apos;&apos;,&#10;name4:
+        &apos;&apos;,&#10;address14: &apos;&apos;,&#10;address24: &apos;&apos;,&#10;city4:
+        &apos;&apos;,&#10;state4: &apos;&apos;,&#10;zip4: &apos;&apos;,&#10;phone4:
+        &apos;&apos;,&#10;cgid4: &apos;&apos;,&#10;fax4: &apos;&apos;&#10;},&#10;guarantor:
+        {&#10;relationship: &apos;Unknown&apos;,&#10;name: &apos;demopatient1 demopatient1&apos;,&#10;last:
+        &apos;demopatient1&apos;,&#10;first: &apos;demopatient1&apos;,&#10;middle:
+        &apos;&apos;,&#10;address: &apos;1 St Nw 1 &apos;,&#10;city: &apos;Sunrise&apos;,&#10;state:
+        &apos;FL&apos;,&#10;zip: &apos;33324&apos;,&#10;phone: &apos;&apos;,&#10;ssn:
+        &apos;&apos;,&#10;dob: &apos;7\/10\/1989&apos;&#10;},&#10;oins1: {&#10;relationship:
+        &apos;Other&apos;,&#10;name: &apos;demopatient1 demopatient1&apos;,&#10;first:
+        &apos;demopatient1&apos;,&#10;last: &apos;demopatient1&apos;,&#10;middle:
+        &apos;&apos;,&#10;address: &apos;1 St Nw 1 &apos;,&#10;city: &apos;Sunrise&apos;,&#10;state:
+        &apos;FL&apos;,&#10;zip: &apos;33324&apos;,&#10;phone: &apos;&apos;,&#10;ssn:
+        &apos;&apos;,&#10;number: &apos;&apos;,&#10;group: &apos;1&apos;,&#10;code:
+        &apos;COM&apos;,&#10;medicaid: &apos;N&apos;,&#10;type: &apos;&apos;,&#10;dob:
+        &apos;7\/10\/1989&apos;,&#10;sex: &apos;M&apos;,&#10;pname: &apos;Guardian&apos;,&#10;paddress:
+        &apos;Po Box 8019&apos;,&#10;paddress2: &apos;&apos;,&#10;pcity: &apos;Appleton&apos;,&#10;pstate:
+        &apos;WI&apos;,&#10;pzip: &apos;54912&apos;,&#10;eligible: &apos;U&apos;&#10;},&#10;oins2:
+        {&#10;relationship: &apos;&apos;,&#10;name: &apos;&apos;,&#10;first: &apos;&apos;,&#10;last:
+        &apos;&apos;,&#10;middle: &apos;&apos;,&#10;address: &apos;&apos;,&#10;city:
+        &apos;&apos;,&#10;state: &apos;&apos;,&#10;zip: &apos;&apos;,&#10;phone: &apos;&apos;,&#10;ssn:
+        &apos;&apos;,&#10;number: &apos;&apos;,&#10;group: &apos;&apos;,&#10;code:
+        &apos;&apos;,&#10;type: &apos;&apos;,&#10;dob: &apos;&apos;,&#10;sex: &apos;&apos;,&#10;pname:
+        &apos;&apos;,&#10;paddress: &apos;&apos;,&#10;paddress2: &apos;&apos;,&#10;pcity:
+        &apos;&apos;,&#10;pstate: &apos;&apos;,&#10;pzip: &apos;&apos;,&#10;eligible:
+        &apos;&apos;&#10;},&#10;oins3: {&#10;relationship: &apos;&apos;,&#10;name:
+        &apos;&apos;,&#10;first: &apos;&apos;,&#10;last: &apos;&apos;,&#10;middle:
+        &apos;&apos;,&#10;address: &apos;&apos;,&#10;city: &apos;&apos;,&#10;state:
+        &apos;&apos;,&#10;zip: &apos;&apos;,&#10;phone: &apos;&apos;,&#10;ssn: &apos;&apos;,&#10;number:
+        &apos;&apos;,&#10;group: &apos;&apos;,&#10;code: &apos;&apos;,&#10;type: &apos;&apos;,&#10;dob:
+        &apos;&apos;,&#10;sex: &apos;&apos;,&#10;pname: &apos;&apos;,&#10;paddress:
+        &apos;&apos;,&#10;paddress2: &apos;&apos;,&#10;pcity: &apos;&apos;,&#10;pstate:
+        &apos;&apos;,&#10;pzip: &apos;&apos;,&#10;eligible: &apos;&apos;&#10;},&#10;employer:
+        {&#10;name: &apos;&apos;,&#10;workman: &apos;&apos;&#10;}&#10;};&#10;var _Tests
+        = new Array();&#10;var sCode = new Array();&#10;var _APAOEs = new Array();&#10;var
+        displayICD9=false;&#10;var displayICD10=true;&#10;sCode[0] = &apos;&apos;;&#10;_Tests[0]
+        = new TestData(&apos;4719&apos;, &apos;GLUCOSE (U) QL&apos;, &apos;&apos;,
+        &apos;&apos;, &apos;N&apos;, &apos;&apos;, &apos;54201&apos;,&apos;&apos;);&#10;_Tests[0].ICD9s[_Tests[0].ICD9s.length]
+        = new ICD9(&apos;*R10.0&apos;, &apos;ACUTE ABDOMEN&apos;);&#10;var _ODocs
+        = new Array();&#10;var _sSpanishABN = &apos;N&apos;;&#10;var _sShowDOS = &apos;N&apos;;&#10;writeOrder();&#10;&lt;/SCRIPT&gt;&#10;&lt;/BODY&gt;&#10;&lt;/HTML&gt;</body_text><mime_type>HTML</mime_type><object_type>order</object_type><clearance>10</clearance><expiration_date></expiration_date><ownerid>FACILITY</ownerid><object_id>3004834601</object_id><objectdoc>621448196359963</objectdoc><report_date></report_date></OBJECT></RESULT>'
+  recorded_at: Sat, 21 May 2022 17:21:10 GMT
+recorded_with: VCR 6.0.0

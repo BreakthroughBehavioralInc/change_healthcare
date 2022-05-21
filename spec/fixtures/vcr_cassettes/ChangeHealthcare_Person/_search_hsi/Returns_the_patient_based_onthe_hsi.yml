@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cli-cert.emdeon.com/servlet/XMLServlet?request=%3C?xml%20version=%221.0%22?%3E%3CREQUEST%20userid=%22USER_ID%22%20password=%22PASSWORD%22%20facility=%22FACILITY%22%3E%20%20%3COBJECT%20name=%22person%22%20op=%22search_hsi%22%3E%20%20%20%20%3Chsi_value%3Etest%3C/hsi_value%3E%20%20%20%20%3Corganization%3EFACILITY%3C/organization%3E%20%20%3C/OBJECT%3E%3C/REQUEST%3E
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.1.0p0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - cli-cert.emdeon.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 May 2022 17:21:43 GMT
+      Server:
+      - Apache
+      Content-Length:
+      - '2462'
+      Set-Cookie:
+      - BIGipServerClinician_CERT-8080=3108146186.36895.0000; path=/; Httponly; Secure
+      - ClinicianLogo=clinician_logo.jpg; Expires=Mon, 20-Jun-2022 17:21:43 GMT; Path=/;Secure;SameSite=None
+      - ClinicianLogoURL=www.emdeon.com; Expires=Mon, 20-Jun-2022 17:21:43 GMT; Path=/;Secure;SameSite=None
+      - ClinicianOrg=MDLIVE; Expires=Mon, 20-Jun-2022 17:21:43 GMT; Path=/;Secure;SameSite=None
+      - ClinicianTheme=emdeon; Expires=Mon, 20-Jun-2022 17:21:43 GMT; Path=/;Secure;SameSite=None
+      Content-Type:
+      - text/xml
+    body:
+      encoding: UTF-8
+      string: <?xml version='1.0'?><RESULT sessionid="USER_ID45b66cbd187f9512|45c4c1194a8dc937|435fd731c5b5a740|42dfd731c5b5a740|"><OBJECT
+        name="person" op="search_hsi"><date></date><insurance></insurance><country></country><isp_state></isp_state><providercaregiver></providercaregiver><address_1>2401
+        N ABRAM RD 86</address_1><formu_orgid></formu_orgid><address_2></address_2><birth_date>10/27/1923</birth_date><mother_name></mother_name><county></county><guarantor></guarantor><prim_cg_lname></prim_cg_lname><lab></lab><suffix></suffix><ter_isp_address_1></ter_isp_address_1><plan_identifier></plan_identifier><ssn></ssn><leadperson>3006473421</leadperson><sec_isp_city></sec_isp_city><sec_insurance></sec_insurance><sec_isp_state></sec_isp_state><ter_isp_hsi_value></ter_isp_hsi_value><work_phone_number></work_phone_number><bill_type></bill_type><lab_name></lab_name><hsi_value>test</hsi_value><state>TX</state><height></height><zip>78572</zip><placer_order_number></placer_order_number><record_date></record_date><transmission_mode></transmission_mode><weight></weight><work_phone_ext></work_phone_ext><ter_isp_name></ter_isp_name><ownerid></ownerid><person_hsi>3006543839</person_hsi><payer_identifier></payer_identifier><isp_hsi_value></isp_hsi_value><person>3006473421</person><prim_cg_mname></prim_cg_mname><last_name_soundex>EDWAD</last_name_soundex><status></status><sec_isp_hsi_value></sec_isp_hsi_value><ter_isp_city></ter_isp_city><sec_isp_address_1></sec_isp_address_1><age_type></age_type><work_phone_area_code></work_phone_area_code><city>MISSION</city><hsilabel></hsilabel><sec_isp_zip></sec_isp_zip><prim_cg_fname></prim_cg_fname><title></title><name_prefix></name_prefix><fav_pharm_name></fav_pharm_name><isp_city></isp_city><ter_insurance></ter_insurance><home_phone_number>5856449</home_phone_number><isp_address_1></isp_address_1><clearance></clearance><first_name>Florenc</first_name><label_name>PAN</label_name><ter_isp_state></ter_isp_state><is_active>Y</is_active><soundex_flag></soundex_flag><primarycaregiver></primarycaregiver><formu_groupid></formu_groupid><sex>F</sex><last_name>Edward</last_name><isp_zip></isp_zip><middle_name>E</middle_name><ter_isp_zip></ter_isp_zip><isp_name></isp_name><allergy_status></allergy_status><favorite_pharmacy></favorite_pharmacy><organization></organization><home_phone_area_code>956</home_phone_area_code><sec_isp_name></sec_isp_name><mothers_maiden_name></mothers_maiden_name><age></age></OBJECT></RESULT>
+  recorded_at: Sat, 21 May 2022 17:21:17 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cli-cert.emdeon.com/servlet/XMLServlet?request=%3C?xml%20version=%221.0%22?%3E%3CREQUEST%20userid=%22USER_ID%22%20password=%22PASSWORD%22%20facility=%22FACILITY%22%3E%20%20%3COBJECT%20name=%22providercaregiver%22%20op=%22put_no_update%22%3E%20%20%20%20%3Ccaregiver%3E3004219964%3C/caregiver%3E%20%20%20%20%3Cprovider%3EFACILITY%3C/provider%3E%20%20%3C/OBJECT%3E%3C/REQUEST%3E
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.1.0p0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - cli-cert.emdeon.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 May 2022 17:21:45 GMT
+      Server:
+      - Apache
+      Content-Length:
+      - '1537'
+      Set-Cookie:
+      - BIGipServerClinician_CERT-8080=3108146186.36895.0000; path=/; Httponly; Secure
+      - ClinicianLogo=clinician_logo.jpg; Expires=Mon, 20-Jun-2022 17:21:45 GMT; Path=/;Secure;SameSite=None
+      - ClinicianLogoURL=www.emdeon.com; Expires=Mon, 20-Jun-2022 17:21:45 GMT; Path=/;Secure;SameSite=None
+      - ClinicianOrg=MDLIVE; Expires=Mon, 20-Jun-2022 17:21:45 GMT; Path=/;Secure;SameSite=None
+      - ClinicianTheme=emdeon; Expires=Mon, 20-Jun-2022 17:21:45 GMT; Path=/;Secure;SameSite=None
+      Content-Type:
+      - text/xml
+    body:
+      encoding: UTF-8
+      string: <?xml version='1.0'?><RESULT sessionid="USER_ID45ccd26e71091827|45b7adc132f55f0c|435fd737891bd4c0|42dfd737891bd4c0|"><OBJECT
+        name="providercaregiver" op="put_no_update"><provider_type></provider_type><enable_rxfill></enable_rxfill><cg_sex></cg_sex><cg_npi></cg_npi><cg_birth_date></cg_birth_date><providercaregiver>3002264759</providercaregiver><cg_upin></cg_upin><cg_type></cg_type><update></update><enable_refill></enable_refill><cg_last_name></cg_last_name><pdmp_prescriber_role></pdmp_prescriber_role><appuser></appuser><cg_suffix></cg_suffix><provider_npi></provider_npi><caregiver></caregiver><enable_rxchange></enable_rxchange><provider></provider><provider_address_1></provider_address_1><cg_middle_name></cg_middle_name><enable_epcs></enable_epcs><cg_prefix></cg_prefix><clearance></clearance><provider_zip></provider_zip><cg_title></cg_title><provider_name></provider_name><reg_status_code></reg_status_code><cg_first_name></cg_first_name><toggle_epcs_for_approval></toggle_epcs_for_approval><dea_number></dea_number><is_active></is_active><reg_status_msg></reg_status_msg><is_erx_registered></is_erx_registered><ownerid></ownerid><provider_fed_tax_id></provider_fed_tax_id><cg_dea_number></cg_dea_number><cg_lab_hsi_value></cg_lab_hsi_value><caregiver_type></caregiver_type><provider_state></provider_state><cg_patmsg_id></cg_patmsg_id><ss_spi></ss_spi><enable_rxcancel></enable_rxcancel><organization></organization><provider_city></provider_city><cg_ssn></cg_ssn><cg_is_epcs_enabled></cg_is_epcs_enabled></OBJECT></RESULT>
+  recorded_at: Sat, 21 May 2022 17:21:18 GMT
+recorded_with: VCR 6.0.0

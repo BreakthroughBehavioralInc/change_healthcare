@@ -1,0 +1,143 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cli-cert.changehealthcare.com/servlet/DxLogin?CreationDateFrom=03/01/2014&CreationDateTo=03/08/2014&EMR=y&PW=PASSWORD&actionCommand=startDownload&apiLogin=true&autoPrint=true&batchDownload=true&hdnBusiness=FACILITY&reportTypes=LABRES&target=jsp/lab/results/FDC.jsp&userid=USER_ID
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.1.0p0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - cli-cert.changehealthcare.com
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Date:
+      - Sat, 21 May 2022 17:21:45 GMT
+      Server:
+      - Apache
+      P3p:
+      - policyref="/w3c/p3p.xml", CP='IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi
+        CONi HIS OUR IND CNT'
+      Location:
+      - "/jsp/lab/results/FDC.jsp?userid=USER_ID45c554e7ca035743|45be6e1d0001daec|435fc3021304e0c0|42dfc3021304e0c0|&CreationDateFrom=03%2F01%2F2014&CreationDateTo=03%2F08%2F2014&EMR=y&actionCommand=startDownload&apiLogin=true&autoPrint=true&batchDownload=true&hdnBusiness=FACILITY&reportTypes=LABRES"
+      Content-Length:
+      - '0'
+      Set-Cookie:
+      - BIGipServerClinician_CERT-8080=3091368970.36895.0000; path=/; Httponly; Secure
+      - ClinicianLogo=clinician_logo.jpg; Expires=Mon, 20-Jun-2022 17:21:45 GMT; Path=/;Secure;SameSite=None
+      - ClinicianLogoURL=www.emdeon.com; Expires=Mon, 20-Jun-2022 17:21:45 GMT; Path=/;Secure;SameSite=None
+      - ClinicianOrg=MDLIVE; Expires=Mon, 20-Jun-2022 17:21:45 GMT; Path=/;Secure;SameSite=None
+      - ClinicianSessionUser=USER_ID45c554e7ca035743%7C45be6e1d0001daec%7C435fc3021304e0c0%7C42dfc3021304e0c0%7C;
+        Path=/;Secure;SameSite=None
+      - ClinicianTheme=emdeon; Expires=Mon, 20-Jun-2022 17:21:45 GMT; Path=/;Secure;SameSite=None
+      - LabTicketUSER_ID=45c554e7ca035743%7C45be6e1d0001daec%7C435fc3021304e0c0%7C42dfc3021304e0c0%7C;
+        Path=/;Secure;SameSite=None
+      Content-Type:
+      - text/html
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Sat, 21 May 2022 17:21:19 GMT
+- request:
+    method: get
+    uri: https://cli-cert.changehealthcare.com/jsp/lab/results/FDC.jsp?CreationDateFrom=03/01/2014&CreationDateTo=03/08/2014&EMR=y&actionCommand=startDownload&apiLogin=true&autoPrint=true&batchDownload=true&hdnBusiness=FACILITY&reportTypes=LABRES&userid=USER_ID45c554e7ca035743%7C45be6e1d0001daec%7C435fc3021304e0c0%7C42dfc3021304e0c0%7C
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.1.0p0
+      Cookie:
+      - BIGipServerClinician_CERT-8080=3091368970.36895.0000; ClinicianLogo=clinician_logo.jpg;
+        ClinicianLogoURL=www.emdeon.com; ClinicianOrg=MDLIVE; ClinicianSessionUser=USER_ID45c554e7ca035743%7C45be6e1d0001daec%7C435fc3021304e0c0%7C42dfc3021304e0c0%7C;
+        ClinicianTheme=emdeon; LabTicketUSER_ID=45c554e7ca035743%7C45be6e1d0001daec%7C435fc3021304e0c0%7C42dfc3021304e0c0%7C
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - cli-cert.changehealthcare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 May 2022 17:21:45 GMT
+      Server:
+      - Apache
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      P3p:
+      - policyref="/w3c/p3p.xml", CP='IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi
+        CONi HIS OUR IND CNT'
+      Content-Length:
+      - '72'
+      Set-Cookie:
+      - JSESSIONID=89D27302D9A6FA2931A93A96D9FF662A; Path=/; HttpOnly;Secure;SameSite=None
+      Content-Type:
+      - text/html;charset=ISO-8859-1
+    body:
+      encoding: UTF-8
+      string: "\r\n\r\n\r\n\r\n<HTML>\r\n<HEAD>\r\n<TITLE>startDownload</TITLE>\r\n</HEAD>\r\n</HTML>\r\n"
+  recorded_at: Sat, 21 May 2022 17:21:19 GMT
+- request:
+    method: get
+    uri: https://cli-cert.changehealthcare.com/servlet/lab.results.fdcServlet?actionCommand=NextFile&batchDownload=true&fdcuserid=USER_ID
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.1.0p0
+      Cookie:
+      - BIGipServerClinician_CERT-8080=3091368970.36895.0000; ClinicianLogo=clinician_logo.jpg;
+        ClinicianLogoURL=www.emdeon.com; ClinicianOrg=MDLIVE; ClinicianSessionUser=USER_ID45c554e7ca035743%7C45be6e1d0001daec%7C435fc3021304e0c0%7C42dfc3021304e0c0%7C;
+        ClinicianTheme=emdeon; JSESSIONID=89D27302D9A6FA2931A93A96D9FF662A; LabTicketUSER_ID=45c554e7ca035743%7C45be6e1d0001daec%7C435fc3021304e0c0%7C42dfc3021304e0c0%7C
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - cli-cert.changehealthcare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 May 2022 17:21:46 GMT
+      Server:
+      - Apache
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      P3p:
+      - policyref="/w3c/p3p.xml", CP='IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi
+        CONi HIS OUR IND CNT'
+      Content-Length:
+      - '100'
+      Content-Type:
+      - text/plain
+    body:
+      encoding: UTF-8
+      string: "<--BEGIN NUMBER OF DOCS>-1;exception;unknown;unknown;unknown;unknown;unknown;<--END
+        NUMBER OF DOCS>\n"
+  recorded_at: Sat, 21 May 2022 17:21:19 GMT
+recorded_with: VCR 6.0.0

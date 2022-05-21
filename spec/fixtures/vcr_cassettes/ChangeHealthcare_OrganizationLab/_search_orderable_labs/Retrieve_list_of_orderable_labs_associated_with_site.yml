@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cli-cert.emdeon.com/servlet/XMLServlet?request=%3C?xml%20version=%221.0%22?%3E%3CREQUEST%20userid=%22USER_ID%22%20password=%22PASSWORD%22%20facility=%22FACILITY%22%3E%20%20%3COBJECT%20name=%22organizationlab%22%20op=%22search_orderable_labs%22%3E%20%20%20%20%3Ccan_order_thru%3EY%3C/can_order_thru%3E%20%20%20%20%3Cchild_only%3EY%3C/child_only%3E%20%20%20%20%3Corganization%3EFACILITY%3C/organization%3E%20%20%3C/OBJECT%3E%3C/REQUEST%3E
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.1.0p0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - cli-cert.emdeon.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 May 2022 17:21:43 GMT
+      Server:
+      - Apache
+      Content-Length:
+      - '2587'
+      Set-Cookie:
+      - BIGipServerClinician_CERT-8080=3108146186.36895.0000; path=/; Httponly; Secure
+      - ClinicianLogo=clinician_logo.jpg; Expires=Mon, 20-Jun-2022 17:21:43 GMT; Path=/;Secure;SameSite=None
+      - ClinicianLogoURL=www.emdeon.com; Expires=Mon, 20-Jun-2022 17:21:43 GMT; Path=/;Secure;SameSite=None
+      - ClinicianOrg=MDLIVE; Expires=Mon, 20-Jun-2022 17:21:43 GMT; Path=/;Secure;SameSite=None
+      - ClinicianTheme=emdeon; Expires=Mon, 20-Jun-2022 17:21:43 GMT; Path=/;Secure;SameSite=None
+      Content-Type:
+      - text/xml
+    body:
+      encoding: UTF-8
+      string: <?xml version='1.0'?><RESULT sessionid="USER_ID45c814af7dfd53a0|45c919a1e7f1c2bf|435fd73c81019240|42dfd73c81019240|"><OBJECT
+        name="organizationlab" op="search_orderable_labs"><lab_code>TA</lab_code><city>TAMPA</city><parentlab>1502169</parentlab><address_1>5610
+        W LASALLE STREET</address_1><address_2></address_2><discrete_result>Y</discrete_result><enable_irbcl></enable_irbcl><lab>1502191</lab><payer_priority></payer_priority><parent_lab_code></parent_lab_code><clearance></clearance><is_beacon>N</is_beacon><lab_name>LabCorp
+        Tampa</lab_name><state>FL</state><clia_number></clia_number><zip>336071770</zip><can_order_thru>Y</can_order_thru><transmission_mode>ELECTRONIC</transmission_mode><organizationlab>3001459480</organizationlab><transfer_id></transfer_id><is_default>Y</is_default><ownerid></ownerid><sequence></sequence><organization></organization><parent_lab_name>Laboratory
+        Corporation of America-Parent</parent_lab_name></OBJECT><OBJECT name="organizationlab"
+        op="search_orderable_labs"><lab_code>STL</lab_code><city>ST. LOUIS</city><parentlab>1486333</parentlab><address_1>2040
+        CONCOURSE</address_1><address_2></address_2><discrete_result>Y</discrete_result><enable_irbcl></enable_irbcl><lab>18169821</lab><payer_priority></payer_priority><parent_lab_code></parent_lab_code><clearance></clearance><is_beacon>N</is_beacon><lab_name>QUEST
+        DIAGNOSTICS-ST. LOUIS</lab_name><state>MO</state><clia_number></clia_number><zip>63146</zip><can_order_thru>Y</can_order_thru><transmission_mode>ELECTRONIC</transmission_mode><organizationlab>3001759777</organizationlab><transfer_id></transfer_id><is_default>N</is_default><ownerid></ownerid><sequence></sequence><organization></organization><parent_lab_name>Quest
+        Diagnostics-Parent</parent_lab_name></OBJECT><OBJECT name="organizationlab"
+        op="search_orderable_labs"><lab_code>TMP</lab_code><city>TAMPA</city><parentlab>1486333</parentlab><address_1>4225
+        E. FOWLER AVE</address_1><address_2></address_2><discrete_result>Y</discrete_result><enable_irbcl></enable_irbcl><lab>4671781</lab><payer_priority></payer_priority><parent_lab_code></parent_lab_code><clearance></clearance><is_beacon>N</is_beacon><lab_name>QUEST
+        DIAGNOSTICS-TAMPA</lab_name><state>FL</state><clia_number></clia_number><zip>33617</zip><can_order_thru>Y</can_order_thru><transmission_mode>ELECTRONIC</transmission_mode><organizationlab>3001479528</organizationlab><transfer_id></transfer_id><is_default>N</is_default><ownerid></ownerid><sequence></sequence><organization></organization><parent_lab_name>Quest
+        Diagnostics-Parent</parent_lab_name></OBJECT></RESULT>
+  recorded_at: Sat, 21 May 2022 17:21:17 GMT
+recorded_with: VCR 6.0.0

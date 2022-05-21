@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cli-cert.emdeon.com/servlet/XMLServlet?request=%3C?xml%20version=%221.0%22?%3E%3CREQUEST%20userid=%22USER_ID%22%20password=%22PASSWORD%22%20facility=%22FACILITY%22%3E%20%20%3COBJECT%20name=%22order%22%20op=%22generate_order_number%22%3E%20%20%20%20%3Clab%3E23402537%3C/lab%3E%20%20%20%20%3Corderingorganization%3E23402521%3C/orderingorganization%3E%20%20%3C/OBJECT%3E%3C/REQUEST%3E
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.1.0p0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - cli-cert.emdeon.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 May 2022 17:21:36 GMT
+      Server:
+      - Apache
+      Content-Length:
+      - '4057'
+      Set-Cookie:
+      - BIGipServerClinician_CERT-8080=3108146186.36895.0000; path=/; Httponly; Secure
+      - ClinicianLogo=clinician_logo.jpg; Expires=Mon, 20-Jun-2022 17:21:36 GMT; Path=/;Secure;SameSite=None
+      - ClinicianLogoURL=www.emdeon.com; Expires=Mon, 20-Jun-2022 17:21:36 GMT; Path=/;Secure;SameSite=None
+      - ClinicianOrg=MDLIVE; Expires=Mon, 20-Jun-2022 17:21:36 GMT; Path=/;Secure;SameSite=None
+      - ClinicianTheme=emdeon; Expires=Mon, 20-Jun-2022 17:21:36 GMT; Path=/;Secure;SameSite=None
+      Content-Type:
+      - text/xml
+    body:
+      encoding: UTF-8
+      string: <?xml version='1.0'?><RESULT sessionid="USER_ID45c35f483641dba8|45c67e69e4f84fc0|435fd714e113a2c0|42dfd714e113a2c0|"><OBJECT
+        name="order" op="generate_order_number"><anonymous_flag></anonymous_flag><guarantor_relationship></guarantor_relationship><person_sex></person_sex><guarantor></guarantor><collection_datetime></collection_datetime><ref_cg_mname></ref_cg_mname><guarantor_city></guarantor_city><order_status></order_status><billingcaregiver></billingcaregiver><work_phone_number></work_phone_number><cg_middle_name></cg_middle_name><bill_type></bill_type><lab_name></lab_name><ref_cg_npi></ref_cg_npi><cg_first_name></cg_first_name><order></order><prepaid_amount></prepaid_amount><ref_cg_fname></ref_cg_fname><lab_reference></lab_reference><stat_flag></stat_flag><callback_phone_number></callback_phone_number><include_in_manifest></include_in_manifest><ownerid></ownerid><master_placer_order_number></master_placer_order_number><guarantor_suffix></guarantor_suffix><order_code></order_code><aoe_validation_failed></aoe_validation_failed><nurse_unit></nurse_unit><person_dob></person_dob><icd_lab_accepts></icd_lab_accepts><work_phone_area_code></work_phone_area_code><document></document><orderingorganization></orderingorganization><person_zip></person_zip><submission_date></submission_date><pan_indicator></pan_indicator><guarantor_last_name></guarantor_last_name><clearance></clearance><person_ssn></person_ssn><icd_9_cm_code></icd_9_cm_code><person_home_phone_number></person_home_phone_number><sex></sex><last_name></last_name><seconds_since_transmit></seconds_since_transmit><phone_result_flag></phone_result_flag><guarantor_home_phone></guarantor_home_phone><faxback_phone_number></faxback_phone_number><guarantor_state></guarantor_state><lab_instruction></lab_instruction><cached_requisition></cached_requisition><person_first_name></person_first_name><ref_cg_lname></ref_cg_lname><bed></bed><date></date><person_suffix></person_suffix><guarantor_middle_name></guarantor_middle_name><order_comment></order_comment><parentorder></parentorder><guarantor_first_name></guarantor_first_name><cg_last_name></cg_last_name><lab></lab><suffix></suffix><guarantor_zip></guarantor_zip><lab_logo_location></lab_logo_location><person_city></person_city><fasting_hours></fasting_hours><person_address_1></person_address_1><person_address_2></person_address_2><personhsi></personhsi><manual_req_num></manual_req_num><transmission_date></transmission_date><referringcaregiver></referringcaregiver><icd_10_cm_code></icd_10_cm_code><order_diag_description></order_diag_description><order_type></order_type><icd_validation_failed></icd_validation_failed><ordering_cg_id></ordering_cg_id><actalink_user_name></actalink_user_name><organization_counter></organization_counter><person_home_phone_area_code></person_home_phone_area_code><person_last_name></person_last_name><placer_order_number>1220</placer_order_number><guarantor_address_1></guarantor_address_1><is_split></is_split><guarantor_address_2></guarantor_address_2><work_phone_ext></work_phone_ext><hospital_id></hospital_id><created_by></created_by><ref_cg_upin></ref_cg_upin><patient_id></patient_id><person></person><origorderingorganization></origorderingorganization><primaryorderingcaregiver></primaryorderingcaregiver><person_state></person_state><beacon_case_number></beacon_case_number><expected_coll_datetime></expected_coll_datetime><callback_phone_area_code></callback_phone_area_code><age_type></age_type><hsilabel></hsilabel><referring_cg_id></referring_cg_id><description></description><ref_cg_suffix></ref_cg_suffix><guarantor_sex></guarantor_sex><person_middle_name></person_middle_name><home_phone_number></home_phone_number><first_name></first_name><middle_name></middle_name><originalorder></originalorder><room></room><faxback_phone_area_code></faxback_phone_area_code><request_date></request_date><home_phone_area_code></home_phone_area_code><age></age><orig_organization_name></orig_organization_name><person_hsi_value></person_hsi_value><username></username></OBJECT></RESULT>
+  recorded_at: Sat, 21 May 2022 17:21:10 GMT
+recorded_with: VCR 6.0.0
