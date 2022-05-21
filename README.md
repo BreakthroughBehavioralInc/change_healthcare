@@ -1,8 +1,10 @@
 # ChangeHealthcare
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/change_healthcare`. To experiment with that code, run `bin/console` for an interactive prompt.
+The ChangeHealthcare Ruby library provides convenient access to the ChangeHealthcare API from applications written in the Ruby language. It includes a pre-defined set of classes for API resources.
 
-TODO: Delete this and the text above, and describe your gem
+The library also provides other features. For example:
+
+Easy configuration path for fast setup and use.
 
 ## Installation
 
@@ -22,7 +24,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Check specs for usage information
 
 ## Development
 
@@ -40,4 +42,4 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+The gem is available as open source under the terms of the [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0).
