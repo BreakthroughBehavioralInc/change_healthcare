@@ -21,7 +21,10 @@ class ChangeHealthcare::ApiClient
     builder = Nokogiri::XML::Builder.new do |xml|
       xml.REQUEST(request_params) do
         if params.is_a? Hash
-          xml.OBJECT(name: object_name, op: operation) do
+          default_object_attributes = {name: object_name, op: operation}
+          object_attributes = params.delete(:object_attributes)
+          default_object_attributes.merge!(object_attributes) if object_attributes.is_a?(Hash)
+          xml.OBJECT(default_object_attributes) do
             params.each_pair do |k,v|
               save_element(xml, k, v)
             end

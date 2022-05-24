@@ -24,7 +24,7 @@ class ChangeHealthcare::Order < ChangeHealthcare::BaseApiObject
       :prepaid_amount, :primaryorderingcaregiver, :ref_cg_fname, :ref_cg_lname, :ref_cg_mname,
       :ref_cg_npi, :ref_cg_suffix, :ref_cg_upin, :referring_cg_id, :referringcaregiver,
       :request_date, :room, :seconds_since_transmit, :sex, :stat_flag, :submission_date,
-      :suffix, :transmission_date, :username, :work_phone_area_code, :work_phone_ext, :work_phone_number
+      :suffix, :transmission_date, :username, :work_phone_area_code, :work_phone_ext, :work_phone_number, :body
     ]
   end
 
@@ -32,6 +32,11 @@ class ChangeHealthcare::Order < ChangeHealthcare::BaseApiObject
 
   def self.chc_object_name
     "order"
+  end
+
+  def self.requisitionPdf(params={})
+    resp = call_api(__method__.to_s, params, false)
+    response_to_list(resp)
   end
 
   # https://cli-cert.emdeon.com/api/cert/order.html#generate_order_number
