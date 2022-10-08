@@ -1,6 +1,3 @@
-require 'simplecov'
-SimpleCov.start
-
 require "bundler/setup"
 require "change_healthcare"
 require "vcr"
