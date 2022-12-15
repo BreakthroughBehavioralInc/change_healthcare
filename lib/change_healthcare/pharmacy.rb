@@ -21,6 +21,8 @@ class ChangeHealthcare::Pharmacy < ChangeHealthcare::BaseApiObject
     response_to_list(resp)
   end
 
+  # https://cli-cert.emdeon.com/api/cert/pharmacy.html#search
+  # params = { address_1: "811 Pendleton St, Suite 10" }
   def self.search(params={})
     resp = call_api(__method__.to_s, params, false)
     response_to_list(resp)
