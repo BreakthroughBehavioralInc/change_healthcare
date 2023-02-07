@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    change_healthcare (1.0.5)
+    change_healthcare (1.2)
       activesupport (>= 6)
       nokogiri (>= 1.13.6)
       rest-client (~> 2)
@@ -82,6 +82,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (>= 2.0)
   change_healthcare!
+  dotenv
   pry (>= 0.10)
   rake (>= 13.0)
   rspec (>= 3.0)

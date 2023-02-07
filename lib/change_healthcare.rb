@@ -27,6 +27,7 @@ require "change_healthcare/clinical_report"
 require "change_healthcare/servlet"
 require "change_healthcare/order_diagnosis"
 require "change_healthcare/rx"
+require "change_healthcare/eligibility_client"
 
 
 module ChangeHealthcare
@@ -43,6 +44,6 @@ module ChangeHealthcare
   end
 
   class Configuration
-    attr_accessor :base_url, :base_api_url, :portal_url, :user_id, :password, :facility
+    attr_accessor :base_url, :base_api_url, :portal_url, :user_id, :password, :facility, :auth_url, :client_id, :client_secret
   end
 end
