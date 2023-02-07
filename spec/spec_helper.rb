@@ -10,10 +10,11 @@ ChangeHealthcare.configure do |c|
   c.user_id = ENV['USER_ID']||"USER_ID"
   c.password = ENV['PASSWORD']||"PASSWORD"
   c.facility = ENV['FACILITY']||"FACILITY"
-  c.auth_url = ENV['CHANGE_HEALTHCARE_EDI_AUTH_URL']
-  c.client_id = ENV['CHANGE_HEALTHCARE_EDI_CLIENT_ID']
-  c.client_secret = ENV['CHANGE_HEALTHCARE_EDI_CLIENT_SECRET']
 end
+
+AUTH_URL = ENV['CHANGE_HEALTHCARE_EDI_AUTH_URL']
+CLIENT_ID = ENV['CHANGE_HEALTHCARE_EDI_CLIENT_ID']
+CLIENT_SECRET = ENV['CHANGE_HEALTHCARE_EDI_CLIENT_SECRET']
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
