@@ -27,6 +27,7 @@ require "change_healthcare/clinical_report"
 require "change_healthcare/servlet"
 require "change_healthcare/order_diagnosis"
 require "change_healthcare/rx"
+require "change_healthcare/eligibility_client"
 
 
 module ChangeHealthcare

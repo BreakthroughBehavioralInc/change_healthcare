@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: CHANGE_HEALTHCARE_EDI_AUTH_URL
+    body:
+      encoding: UTF-8
+      string: '{"client_id":"CHANGE_HEALTHCARE_EDI_CLIENT_ID","client_secret":"CHANGE_HEALTHCARE_EDI_CLIENT_SECRET","grant_type":"client_credentials"}'
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin21 arm64) ruby/2.7.4p191
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '117'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - sandbox.apis.changehealthcare.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-store
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 08 Feb 2023 15:37:56 GMT
+      Pragma:
+      - no-cache
+      X-Chc-Traceid:
+      - 58550436-37be-299e-8871-c85b2d68d4a6
+      X-Chng-Trace-Id:
+      - 58550436-37be-299e-8871-c85b2d68d4a6
+      Content-Length:
+      - '1183'
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+    body:
+      encoding: UTF-8
+      string: '{"access_token":"eyJraWQiOiIyIiwidHlwIjoiSldUIiwiYWxnIjoiUlMyNTYifQ.eyJhY2Nlc3NfdG9rZW4iOiJZY2pidGtQWXYyOUJkcDM5U2tDRWMxY0FIbFZFIiwiYXVkIjoiYXBpUGxhdGZvcm0iLCJhcGlfcHJvZHVjdF9saXN0IjpbIk1OX1Byb2R1Y3RfUmVwb3J0c192MSIsIk1OX1Byb2R1Y3RfQ2xhaW1TdGF0dXNfdjIiLCJUUF9Qcm9kdWN0X1RyYWRpbmdQYXJ0bmVyc192NyIsIk1OX1Byb2R1Y3RfRWxpZ2liaWxpdHlfdjMiLCJNTl9Qcm9kdWN0X1Byb2Zlc3Npb25hbENsYWltc192MyIsIk1OX1Byb2R1Y3RfQ2xhaW1TdWJtaXNzaW9uX3YzIl0sImFwcGxpY2F0aW9uX25hbWUiOiJNTl9NRExpdmVfQXBwIiwibmJmIjoxNjc1ODcwNjc2LCJkZXZlbG9wZXJfZW1haWwiOiJyenVjY29AbWRsaXZlLmNvbSIsImlzcyI6Imh0dHBzOlwvXC9zYW5kYm94LmFwaXMuY2hhbmdlaGVhbHRoY2FyZS5jb20iLCJzY29wZXMiOiIiLCJleHAiOjE2NzU4NzQyNzYsImlhdCI6MTY3NTg3MDY3NiwiY2xpZW50X2lkIjoiSFJBUGVVbzAyV3pVT2kydDRhQ3V3ZEFsQlpqbkd1YWkiLCJqdGkiOiI2NzQ0ZDM5ZC0xZmVhLTRkOGMtYmRiNC02ZjU4YzZjOTljMGUifQ.hhRtxMbmapMFVJhSK-NuaYYNjq8VzCashP-fQzMzaDGiZj9Yukgo-PCg4VpHLM2q9TL65hjAdD2B5FwbQtny6905JL0HxRFTn7vC5v-h_os5e2in1ffI1vETvgBHSbPPAfEU4BPh8lycQGJOBVcgkzQMnoUqr3Jg71eFTNImFo33L_mE-_hUqbn2IMZ47UMaR4fw6Vq5kzosSQcDxtjxOl2k0ddao2_LmvlxIQ4x9XCgyDPRgtE0eLDTU14Rf32tn0iYnFNK4pJGYPw68rTbShdKwthKT40yYRNFtp1IlED99_Sl2ziEWUedBpxmCQuh_eIa2DmW6L3Pcc30ztP0KA","token_type":"bearer","expires_in":3600}'
+  recorded_at: Wed, 08 Feb 2023 15:37:56 GMT
+recorded_with: VCR 6.1.0

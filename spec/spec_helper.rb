@@ -2,6 +2,7 @@ require "bundler/setup"
 require "change_healthcare"
 require "vcr"
 require "pry"
+require "dotenv/load"
 
 ChangeHealthcare.configure do |c|
   c.base_url = "https://cli-cert.emdeon.com/servlet/XMLServlet"
@@ -10,6 +11,10 @@ ChangeHealthcare.configure do |c|
   c.password = ENV['PASSWORD']||"PASSWORD"
   c.facility = ENV['FACILITY']||"FACILITY"
 end
+
+AUTH_URL = ENV['CHANGE_HEALTHCARE_EDI_AUTH_URL']
+CLIENT_ID = ENV['CHANGE_HEALTHCARE_EDI_CLIENT_ID']
+CLIENT_SECRET = ENV['CHANGE_HEALTHCARE_EDI_CLIENT_SECRET']
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
@@ -29,6 +34,9 @@ VCR.configure do |c|
   c.filter_sensitive_data("USER_ID") { ENV['USER_ID'] }
   c.filter_sensitive_data("PASSWORD") { ENV['PASSWORD'] }
   c.filter_sensitive_data("FACILITY") { ENV['FACILITY'] }
+  c.filter_sensitive_data("CHANGE_HEALTHCARE_EDI_AUTH_URL") { ENV['CHANGE_HEALTHCARE_EDI_AUTH_URL'] }
+  c.filter_sensitive_data("CHANGE_HEALTHCARE_EDI_CLIENT_ID") { ENV['CHANGE_HEALTHCARE_EDI_CLIENT_ID'] }
+  c.filter_sensitive_data("CHANGE_HEALTHCARE_EDI_CLIENT_SECRET") { ENV['CHANGE_HEALTHCARE_EDI_CLIENT_SECRET'] }
   c.default_cassette_options = {
     :record => :once,
     :record_on_error => false,
