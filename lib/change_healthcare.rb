@@ -29,6 +29,9 @@ require "change_healthcare/order_diagnosis"
 require "change_healthcare/rx"
 require "change_healthcare/eligibility_client"
 require "change_healthcare/pharmacy"
+require "change_healthcare/isp"
+require "change_healthcare/insurance"
+require "change_healthcare/guarantor"
 
 
 module ChangeHealthcare
