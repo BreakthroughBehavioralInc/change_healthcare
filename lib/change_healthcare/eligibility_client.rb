@@ -55,7 +55,7 @@ class ChangeHealthcare::EligibilityClient
       "NM1*PR*2*Unknown*****PI*#{opt[:trading_partner_service_id]}~",
       "HL*2*1*21*1~",
       "NM1*1P*2*MDLIVE MEDICAL GROUP, PA*****XX*#{opt[:npi]}~",
-      "PRV*AD*PXC*193200000X~",
+      "PRV*AD*PXC*54321g~",
       "HL*3*2*22*1~",
       "TRN*1*#{opt[:control_number]}*9EMDEON999~",
       "NM1*IL*1*#{opt[:subscriber_params].dig(:lastName)}*#{opt[:subscriber_params].dig(:firstName)}****MI*#{opt[:subscriber_params].dig(:memberId)}~",
