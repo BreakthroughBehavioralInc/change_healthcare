@@ -61,18 +61,7 @@ class ChangeHealthcare::Order < ChangeHealthcare::BaseApiObject
   end
 
   def self.e_order_summary_link(params)
-    base = {
-      "userid" => configuration.user_id,
-      "PW" => configuration.password,
-      "hdnBusiness" => configuration.facility,
-      "target" => "jsp/lab/order/ESummaryOrder.jsp",
-      "actionCommand" => "EOrderSummary",
-      "summary" => "true",
-      "apilogon" => "true",
-    }
-    params.merge!(base)
-
-    return "#{configuration.portal_url}?#{params.to_query}"
+    return configuration.base_url
   end
 
 
